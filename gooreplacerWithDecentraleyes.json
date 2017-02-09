@@ -6,23 +6,29 @@
       "description": "Google -> 科大 1",
       "exampleUrl": "https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js",
       "exampleUrl": "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
-      "origin": "^https?://(ajax|fonts)\\.googleapis\\.com/(.+)",
+      "origin": "^https?://ajax\\.googleapis\\.com/",
       "exclude": "https://ajax.googleapis.com/ajax/libs/jquery/(1.2.3|1.2.6|1.3.0|1.3.1|1.3.2|1.4.0|1.4.1|1.4.2|1.4.3|1.4.4|1.5.0|1.5.1|1.5.2|1.6.0|1.6.1|1.6.2|1.6.3|1.6.4|1.7.0|1.7.1|1.7.2|1.8.0|1.8.1|1.8.2|1.8.3|1.9.0|1.9.1|1.10.0|1.10.1|1.10.2|1.11.0|1.11.1|1.11.2|1.11.3|1.12.0|1.12.1|1.12.2|1.12.3|1.12.4|2.0.0|2.0.1|2.0.2|2.0.3|2.1.0|2.1.1|2.1.3|2.1.4)/jquery.min.js",
-      "target": "https://$1.proxy.ustclug.org/$2",
+      "target": "https://ajax.proxy.ustclug.org/",
       "enable": true
     },
     {
       "description": "Google -> 科大 2",
-      "exampleUrl": "https://themes.googleusercontent.com/static/fonts/antic/v4/hEa8XCNM7tXGzD0Uk0AipA.ttf",
-      "origin": "^https?://themes\\.googleusercontent\\.com/(.+)",
-      "target": "https://google-themes.proxy.ustclug.org/$1",
+      "origin": "^https?://fonts\\.googleapis\\.com/",
+      "target": "https://fonts.proxy.ustclug.org/",
       "enable": true
     },
     {
-      "description": "Google -> 科大 3 谷歌字体疑似解封，故禁用该规则",
+      "description": "Google -> 科大 3",
+      "exampleUrl": "https://themes.googleusercontent.com/static/fonts/antic/v4/hEa8XCNM7tXGzD0Uk0AipA.ttf",
+      "origin": "^https?://themes\\.googleusercontent\\.com/",
+      "target": "https://google-themes.proxy.ustclug.org/",
+      "enable": true
+    },
+    {
+      "description": "谷歌字体疑似解封，故禁用该规则",
       "exampleUrl": "https://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf",
-      "origin": "^https?://fonts\\.gstatic\\.com/(.+)",
-      "target": "https://fonts-gstatic.proxy.ustclug.org/$1",
+      "origin": "^https?://fonts\\.gstatic\\.com/",
+      "target": "https://fonts-gstatic.proxy.ustclug.org/",
       "enable": false
     },
     {
