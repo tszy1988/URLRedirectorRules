@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "createdAt": "2017-02-08",
+  "rules": [
+    {
+      "description": "FT中文网",
+      "exampleUrl": "http://www.ftchinese.com/story/001053184",
+      "origin": "//www.ftchinese.com/story/(\\d+)$",
+      "types": ["main_frame"],
+      "target": "//www.ftchinese.com/story/$1?full=y",
+      "enable": true
+    },
+    {
+      "description": "观察者网",
+      "exampleUrl": "http://www.guancha.cn/military-affairs/2016_12_15_384529.shtml",
+      "origin": "//www.guancha.cn/(\\S+/\\d+_\\d+_\\d+_\\d+).shtml$",
+      "types": ["main_frame"],
+      "target": "//www.guancha.cn/$1_s.shtml",
+      "enable": true
+    },
+    {
+      "description": "法律图书馆",
+      "exampleUrl": "http://www.law-lib.com/law/law_view.asp?id=499805",
+      "origin": "//www.law-lib.com/law/law_view.asp\\?id=(\\d+)$",
+      "types": ["main_frame"],
+      "target": "//www.law-lib.com/law/law_view1.asp?id=$1",
+      "enable": true
+    }
+  ]
+}
