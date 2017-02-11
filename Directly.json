@@ -39,7 +39,7 @@
       "exampleUrl": "https://addons.mozilla.org/zh-tw/firefox/",
       "origin": "^https?://addons.mozilla.org/((?!zh-CN).)+/firefox/(.*)",
       "types": ["main_frame"],
-      "target": "https://addons.mozilla.org/zh-CN/firefox/$2",
+      "target": "https://addons.mozilla.org/zh-CN/firefox/$3",
       "enable": true
     },
     {
@@ -98,8 +98,8 @@
       "exampleUrl": "https://www.reddit.com/domain/41.media.tumblr.com/",
       "exampleUrl": "https://www.reddit.com/domain/65.media.tumblr.com/",
       "exampleUrl": "https://www.reddit.com/domain/67.media.tumblr.com/",
-      "origin": "(41|65|67).media.tumblr.com",
-      "target": "68.media.tumblr.com",
+      "origin": "^https?://(41|65|67).media.tumblr.com/",
+      "target": "https://68.media.tumblr.com/",
       "enable": true
     },
     {
