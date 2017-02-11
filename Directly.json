@@ -21,9 +21,10 @@
     {
       "description": "GreasyFork强制简体中文",
       "exampleUrl": "https://greasyfork.org/zh-TW/",
+      "exampleUrl": "https://greasyfork.org/zh-CN/scripts/1-greasemonkey-test-style",
       "origin": "^https://greasyfork.org/((?!zh-CN).)+/(.*)",
       "types": ["main_frame"],
-      "target": "https://greasyfork.org/zh-CN/$2",
+      "target": "https://greasyfork.org/zh-CN/$3",
       "enable": true
     },
     {
