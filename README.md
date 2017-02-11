@@ -13,20 +13,20 @@ Test:
 
 Todo:
 
-期待 [官方支持](https://github.com/fengyc/URLRedirector/issues/10)
+- 期待 [官方支持](https://github.com/fengyc/URLRedirector/issues/10)
 
 将已经失效的 360 库重定向到 Google.
 
-[fullText](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/fullText.json)
+## [fullText](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/fullText.json)
 
 部分网站可以通过网址改变来默认显示全文。
 
-[Directly](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/Directly.json)
+## [Directly](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/Directly.json)
 
-特别提醒：该规则极具个人属性，大量破坏网站功能，请仔细阅读每条规则的说明并实际测试后，谨慎实用！！！
+特别提醒：该规则极具个人属性，大量破坏网站原有功能，请仔细阅读每条规则的说明并实际测试后，谨慎实用！！！
 
 目前按照顶级域名字母排序。
 
 Todo:
 
-待浏览器同步功能完成，拆分为针对各个站点的小规则，以便于维护。
+- 待浏览器同步功能完成，拆分为针对各个站点的小规则，以便于维护。
