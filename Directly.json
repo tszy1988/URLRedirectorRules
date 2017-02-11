@@ -21,10 +21,10 @@
     {
       "description": "GreasyFork强制简体中文",
       "exampleUrl": "https://greasyfork.org/zh-TW/",
-      "exampleUrl": "https://greasyfork.org/zh-CN/scripts/1-greasemonkey-test-style",
-      "origin": "^https://greasyfork.org/((?!zh-CN).)+/(.*)",
+      "exampleUrl": "https://greasyfork.org/zh-TW/scripts/1-greasemonkey-test-style",
+      "origin": "^https://greasyfork.org/((?!zh-CN).)+/",
       "types": ["main_frame"],
-      "target": "https://greasyfork.org/zh-CN/$3",
+      "target": "https://greasyfork.org/zh-CN/",
       "enable": true
     },
     {
@@ -38,15 +38,15 @@
     {
       "description": "AMO强制简体中文",
       "exampleUrl": "https://addons.mozilla.org/zh-tw/firefox/",
-      "origin": "^https?://addons.mozilla.org/((?!zh-CN).)+/firefox/(.*)",
+      "origin": "^https://addons.mozilla.org/((?!zh-CN).)+/firefox/",
       "types": ["main_frame"],
-      "target": "https://addons.mozilla.org/zh-CN/firefox/$3",
+      "target": "https://addons.mozilla.org/zh-CN/firefox/",
       "enable": true
     },
     {
       "description": "去除AMO后缀",
       "exampleUrl": "https://addons.mozilla.org/zh-CN/firefox/addon/omnisidebar/?src=hp-dl-featured",
-      "origin": "^https://addons.mozilla.org/zh-CN/firefox/addon/(.*)/\\?src=.*",
+      "origin": "^https://addons.mozilla.org/zh-CN/firefox/addon/(.+)/\\?src=.*",
       "types": ["main_frame"],
       "target": "https://addons.mozilla.org/zh-CN/firefox/addon/$1",
       "enable": true
