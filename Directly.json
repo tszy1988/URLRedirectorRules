@@ -5,7 +5,7 @@
     {
       "description": "将特定微博信息从微博看看跳转至阅读体验更好的微博HTML5版",
       "exampleUrl": "http://weibo.wbdacdn.com/user/2803301701/status4074010167896825.html#utm_source=rss",
-      "origin": "//weibo.wbdacdn.com/user/\\d+/status(\\d+).html.*",
+      "origin": "^https?://weibo.wbdacdn.com/user/\\d+/status(\\d+).html.*",
       "types": ["main_frame"],
       "target": "https://m.weibo.cn/status/$1",
       "enable": true
@@ -21,7 +21,7 @@
     {
       "description": "微博文章自动跳转到移动版",
       "exampleUrl": "http://weibo.com/ttarticle/p/show?id=2309404056722711967901",
-      "origin": "weibo.com/ttarticle/p/show\\?id=(\\d+)",
+      "origin": "^https?://weibo.com/ttarticle/p/show\\?id=(\\d+)",
       "types": ["main_frame"],
       "target": "https://media.weibo.cn/article?id=$1",
       "enable": true
