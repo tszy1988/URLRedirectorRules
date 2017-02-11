@@ -19,13 +19,13 @@
       "enable": true
     },
     {
-      "description": "GreasyFork强制简体中文",
+      "description": "GreasyFork强制简体中文（Bug，暂时禁用）",
       "exampleUrl": "https://greasyfork.org/zh-TW/",
       "exampleUrl": "https://greasyfork.org/zh-TW/scripts/1-greasemonkey-test-style",
       "origin": "^https://greasyfork.org/((?!zh-CN).)+/",
       "types": ["main_frame"],
       "target": "https://greasyfork.org/zh-CN/",
-      "enable": true
+      "enable": false
     },
     {
       "description": "Mozest广场无图版转至完整版",
@@ -36,20 +36,20 @@
       "enable": true
     },
     {
-      "description": "AMO强制简体中文",
+      "description": "AMO强制简体中文（无效，暂时禁用）",
       "exampleUrl": "https://addons.mozilla.org/zh-tw/firefox/",
       "origin": "^https://addons.mozilla.org/((?!zh-CN).)+/firefox/",
       "types": ["main_frame"],
       "target": "https://addons.mozilla.org/zh-CN/firefox/",
-      "enable": true
+      "enable": false
     },
     {
-      "description": "去除AMO后缀",
+      "description": "去除AMO后缀（无效，暂时禁用）",
       "exampleUrl": "https://addons.mozilla.org/zh-CN/firefox/addon/omnisidebar/?src=hp-dl-featured",
       "origin": "^https://addons.mozilla.org/zh-CN/firefox/addon/(.+)/\\?src=.*",
       "types": ["main_frame"],
       "target": "https://addons.mozilla.org/zh-CN/firefox/addon/$1",
-      "enable": true
+      "enable": false
     },
     {
       "description": "Lofter显示原图（可能破坏博客页面布局）",
@@ -143,12 +143,12 @@
       "enable": true
     },
     {
-      "description": "去除优酷来源后缀",
+      "description": "去除优酷来源后缀（无效，暂时禁用）",
       "exampleUrl": "http://v.youku.com/v_show/id_XMTY0MjIyMDU3Mg==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
       "origin": "v.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?from=.*)?$",
       "types": ["main_frame"],
       "target": "v.youku.com/v_show/id_$1.html",
-      "enable": true
+      "enable": false
     },
     {
       "description": "知乎外站链接免跳转确认（疑似支付官方已修复）",
