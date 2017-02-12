@@ -63,7 +63,7 @@
       "enable": false
     },
     {
-      "description": "Lofter显示原图（可能破坏博客页面布局）",
+      "description": "Lofter显示原图",
       "exampleUrl": "https://imglf.nosdn.127.net/img/T0VLUWtpQlNHSmVHYlM0QU01cElqRE0vM09ETzRKTEtjK3hROFpqSk9QMm1GWXlaL2EwQ1hBPT0.jpeg?imageView&thumbnail=500x10000&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=1&dx=0&gravity=southwest&dissolve=100&image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=&ssitoken_1479551598431_",
       "origin": "^https?://(imglf(\\d)?.nosdn.127.net/img/\\w+.(jpg|jpeg|gif|png|bmp|webp))\\?.*",
       "types": ["main_frame", "image"],
@@ -149,9 +149,9 @@
     {
       "description": "微博文章自动跳转到移动版",
       "exampleUrl": "http://weibo.com/ttarticle/p/show?id=2309404056722711967901",
-      "origin": "^https?://weibo.com/ttarticle/p/show\\?id=(\\d+)",
+      "origin": "^https?://weibo.com/ttarticle/p/show",
       "types": ["main_frame"],
-      "target": "https://media.weibo.cn/article?id=$1",
+      "target": "https://media.weibo.cn/article",
       "enable": true
     },
     {
