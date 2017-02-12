@@ -19,13 +19,23 @@
       "enable": true
     },
     {
-      "description": "GreasyFork强制简体中文（Bug，暂时禁用）",
+      "description": "GreasyFork网址大小写敏感",
+      "exampleUrl": "https://greasyfork.org/zh-tw",
+      "exampleUrl": "https://greasyfork.org/zh-cn/",
       "exampleUrl": "https://greasyfork.org/zh-TW/",
-      "exampleUrl": "https://greasyfork.org/zh-TW/scripts/1-greasemonkey-test-style",
-      "origin": "^https://greasyfork.org/((?!zh-CN).)+/",
+      "origin": "^https://greasyfork.org/zh-(cn|tw|TW)",
       "types": ["main_frame"],
-      "target": "https://greasyfork.org/zh-CN/",
-      "enable": false
+      "target": "https://greasyfork.org/zh-CN",
+      "enable": true
+    },
+    {
+      "description": "GreasyFork强制简体中文",
+      "exampleUrl": "https://greasyfork.org/en/scripts/1-greasemonkey-test-style",
+      "origin": "^https://greasyfork.org/\\S+/(forum|help|scripts|users)",
+      "exclude": "https://greasyfork.org/zh-CN/",
+      "types": ["main_frame"],
+      "target": "https://greasyfork.org/zh-CN/$1",
+      "enable": true
     },
     {
       "description": "Mozest广场无图版转至完整版",
@@ -38,7 +48,8 @@
     {
       "description": "AMO强制简体中文（无效，暂时禁用）",
       "exampleUrl": "https://addons.mozilla.org/zh-tw/firefox/",
-      "origin": "^https://addons.mozilla.org/((?!zh-CN).)+/firefox/",
+      "origin": "^https://addons.mozilla.org/\\S+/firefox/",
+      "exclude": "^https://addons.mozilla.org/zh-CN/firefox/",
       "types": ["main_frame"],
       "target": "https://addons.mozilla.org/zh-CN/firefox/",
       "enable": false
@@ -46,7 +57,7 @@
     {
       "description": "去除AMO后缀（无效，暂时禁用）",
       "exampleUrl": "https://addons.mozilla.org/zh-CN/firefox/addon/omnisidebar/?src=hp-dl-featured",
-      "origin": "^https://addons.mozilla.org/zh-CN/firefox/addon/(.+)/\\?src=.*",
+      "origin": "^https://addons.mozilla.org/zh-CN/firefox/addon/(\\S+)/\\?src=.*",
       "types": ["main_frame"],
       "target": "https://addons.mozilla.org/zh-CN/firefox/addon/$1",
       "enable": false
@@ -128,8 +139,9 @@
     },
     {
       "description": "跳过微博看看框架",
-      "exampleUrl": "weibo.wbdacdn.com/url/t/R5mLykn",
-      "origin": "weibo.wbdacdn.com/url/t/(\\w{7})",
+      "exampleUrl": "http://weibo.wbdacdn.com/url/t/R5mLykn",
+      "exampleUrl": "http://weibo.wbdacdn.com/url/t/RIo18YK/",
+      "origin": "weibo.wbdacdn.com/url/t/(\\w{7})/?",
       "types": ["main_frame"],
       "target": "t.cn/$1",
       "enable": true
@@ -148,14 +160,6 @@
       "origin": "v.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?from=.*)?$",
       "types": ["main_frame"],
       "target": "v.youku.com/v_show/id_$1.html",
-      "enable": false
-    },
-    {
-      "description": "知乎外站链接免跳转确认（疑似支付官方已修复）",
-      "exampleUrl": "https://link.zhihu.com/?target=https%3A//v2ex.com/",
-      "origin": "^https://link.zhihu.com/\\?target=(https?)(.+)//(.+)",
-      "types": ["main_frame"],
-      "target": "$1://$3",
       "enable": false
     }
   ]
