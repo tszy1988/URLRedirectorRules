@@ -149,7 +149,8 @@
     {
       "description": "微博文章自动跳转到移动版",
       "exampleUrl": "http://weibo.com/ttarticle/p/show?id=2309404056722711967901",
-      "origin": "^https?://weibo.com/ttarticle/p/show",
+      "exampleUrl": "http://www.weibo.com/ttarticle/p/show?id=2309404053250302152589#_0",
+      "origin": "^https?://(www.)?weibo.com/ttarticle/p/show",
       "types": ["main_frame"],
       "target": "https://media.weibo.cn/article",
       "enable": true
