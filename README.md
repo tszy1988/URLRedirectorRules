@@ -15,7 +15,7 @@ Todo:
 
 - 期待 [官方支持](https://github.com/fengyc/URLRedirector/issues/10)
 
-将已经失效的 360 库重定向到 Google.
+- 将已经失效的 360 库重定向到 Google.
 
 ## [fullText](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/fullText.json)
 
