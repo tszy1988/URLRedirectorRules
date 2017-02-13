@@ -52,7 +52,7 @@
       "exclude": "^https://addons.mozilla.org/zh-CN/firefox/",
       "types": ["main_frame"],
       "target": "https://addons.mozilla.org/zh-CN/firefox/",
-      "enable": false
+      "enable": true
     },
     {
       "description": "去除AMO后缀（无效，暂时禁用）",
@@ -60,7 +60,7 @@
       "origin": "^https://addons.mozilla.org/zh-CN/firefox/addon/(\\S+)/\\?src=.*",
       "types": ["main_frame"],
       "target": "https://addons.mozilla.org/zh-CN/firefox/addon/$1",
-      "enable": false
+      "enable": true
     },
     {
       "description": "Lofter显示原图",
@@ -102,6 +102,14 @@
       "origin": "^http://www.spmke.com/source/bd.php\\?(https?://.+)",
       "types": ["main_frame"],
       "target": "$1",
+      "enable": true
+    },
+    {
+      "description": "去除今日头条尾巴",
+      "exampleUrl": "https://www.toutiao.com/i6385720374801203714/?tt_from=mobile_qq&utm_campaign=client_share&app=news_article&utm_source=mobile_qq&iid=7706731303&utm_medium=toutiao_ios",
+      "origin": "^https://www.toutiao.com/(a|i)(\\d+)/\\?.*",
+      "types": ["main_frame"],
+      "target": "https://www.toutiao.com/$1$2/",
       "enable": true
     },
     {
