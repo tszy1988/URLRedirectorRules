@@ -138,6 +138,13 @@
       "enable": true
     },
     {
+      "description": "TPRSS生成的RSS图片直接显示原图",
+      "exampleUrl": "http://tprss.puteulanus.com/index.php?pic=http://pbs.twimg.com/media/C4XkyDMVMAAbqKK.jpg&ssitoken_1486997552333_",
+      "origin": "^https?://tprss.puteulanus.com/index.php\\?pic=https?://pbs.twimg.com/media/(\\w+).(jpg|jpeg|gif|png|bmp|webp)&ssitoken_\\d+_",
+      "target": "https://pbs.twimg.com/media/$1.$2:orig",
+      "enable": true
+    },
+    {
       "description": "将特定微博信息从微博看看跳转至阅读体验更好的微博HTML5版",
       "exampleUrl": "http://weibo.wbdacdn.com/user/2803301701/status4074010167896825.html#utm_source=rss",
       "origin": "^https?://weibo.wbdacdn.com/user/\\d+/status(\\d+).html.*",
