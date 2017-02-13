@@ -138,9 +138,10 @@
       "enable": true
     },
     {
-      "description": "TPRSS生成的RSS图片直接显示原图",
+      "description": "TwitRSS.me/TPRSS生成的RSS图片直接显示原图（如果作用于image，会导致InoReader破图，只能作用于地址栏。）",
       "exampleUrl": "http://tprss.puteulanus.com/index.php?pic=http://pbs.twimg.com/media/C4XkyDMVMAAbqKK.jpg&ssitoken_1486997552333_",
       "origin": "^https?://tprss.puteulanus.com/index.php\\?pic=https?://pbs.twimg.com/media/(\\w+).(jpg|jpeg|gif|png|bmp|webp)(&ssitoken_\\d+_)?",
+      "types": ["main_frame"],
       "target": "https://pbs.twimg.com/media/$1.$2:orig",
       "enable": true
     },
