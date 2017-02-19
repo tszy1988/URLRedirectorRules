@@ -173,8 +173,8 @@
     },
     {
       "description": "去除优酷来源后缀",
-      "exampleUrl": "http://v.youku.com/v_show/id_XMTY0MjIyMDU3Mg==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
-      "origin": "v.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?from=.*)",
+      "exampleUrl": "https://v.youku.com/v_show/id_XMTY0MjIyMDU3Mg==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
+      "origin": "v.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?f.*)",
       "types": ["main_frame"],
       "target": "v.youku.com/v_show/id_$1.html",
       "enable": true
