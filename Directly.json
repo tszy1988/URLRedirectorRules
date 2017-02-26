@@ -1,7 +1,19 @@
 {
-  "version": "1.0",
+  "version": "1.20170226",
   "createdAt": "2017-02-11",
   "rules": [
+    {
+      "enable": true,
+      "description": "酷安显示原图",
+      "exampleUrl": "http://image.coolapk.com/feed/2017/0225/689514_1487997452_9028.png.m.jpg",
+      "exampleUrl": "http://image.coolapk.com/feed/2017/0225/689514_1487997452_9028.png.s.jpg",
+      "exampleUrl": "http://image.coolapk.com/apk_image/2017/0217/Screenshot_20170217-110627-for-128915-o_1b95esn8erqa1efbdrm1cbk1cr010-uid-689514.png.t.jpg",
+      "origin": "^http://image.coolapk.com/(feed|apk_image)/(\\S+).(jpg|jpeg|gif|png|bmp|webp).(m|s|t).(jpg|jpeg|gif|png|bmp|webp)",
+      "target": "http://image.coolapk.com/$1/$2.$3",
+      "exclude": "",
+      "methods": [],
+      "types": ["main_frame"]
+    },
     {
       "description": "豆瓣跳过注册页面直接加密登陆",
       "exampleUrl": "http://www.douban.com/accounts/register",
