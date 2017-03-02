@@ -1,29 +1,41 @@
 {
-  "version": "1.0",
-  "createdAt": "2017-02-08",
+  "version": "1.3.1",
+  "createdAt": "2017-03-02",
   "rules": [
     {
       "description": "FT中文网",
-      "exampleUrl": "http://www.ftchinese.com/story/001053184",
       "origin": "www.ftchinese.com/story/(\\d+)$",
-      "types": ["main_frame"],
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
       "target": "www.ftchinese.com/story/$1?full=y",
+      "example": "http://www.ftchinese.com/story/001053184",
       "enable": true
     },
     {
       "description": "观察者网",
-      "exampleUrl": "http://www.guancha.cn/military-affairs/2016_12_15_384529.shtml",
       "origin": "www.guancha.cn/(\\S+/\\d+_\\d+_\\d+_\\d+).shtml$",
-      "types": ["main_frame"],
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
       "target": "www.guancha.cn/$1_s.shtml",
+      "example": "http://www.guancha.cn/military-affairs/2016_12_15_384529.shtml",
       "enable": true
     },
     {
       "description": "法律图书馆",
-      "exampleUrl": "http://www.law-lib.com/law/law_view.asp?id=499805",
       "origin": "www.law-lib.com/law/law_view.asp\\?id=(\\d+)$",
-      "types": ["main_frame"],
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
       "target": "www.law-lib.com/law/law_view1.asp?id=$1",
+      "example": "http://www.law-lib.com/law/law_view.asp?id=499805",
       "enable": true
     }
   ]

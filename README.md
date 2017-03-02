@@ -3,7 +3,7 @@ Personal Rules for URLRedirector
 
 ## [gooreplacerWithDecentraleyes](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/gooreplacerWithDecentraleyes.json)
 
-绕过 Decentraleyes 已经内置的部分库。
+绕过 Decentraleyes 已经内置的部分常用库。
 
 Test:
 
@@ -30,3 +30,7 @@ Todo:
 Todo:
 
 - 待浏览器同步功能完成，拆分为针对各个站点的小规则，以便于维护。
+
+## [AMO]()
+
+https://github.com/fengyc/URLRedirector/issues/9
