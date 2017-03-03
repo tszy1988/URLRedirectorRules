@@ -31,6 +31,6 @@ Todo:
 
 - 待浏览器同步功能完成，拆分为针对各个站点的小规则，以便于维护。
 
-## [AMO]()
+## [AMO](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/AMO.json)
 
 https://github.com/fengyc/URLRedirector/issues/9

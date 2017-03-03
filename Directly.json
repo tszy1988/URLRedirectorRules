@@ -160,7 +160,8 @@
       "exclude": "",
       "methods": [],
       "types": [
-        "main_frame"
+        "main_frame",
+        "image"
       ],
       "target": "https://68.media.tumblr.com/",
       "example": "http://41.media.tumblr.com/2e2b4f5c659dca9b09d9b8a881656d82/tumblr_o0y4zmaRxk1t52mpao1_500.jpg",
@@ -175,7 +176,8 @@
       "exclude": "",
       "methods": [],
       "types": [
-        "main_frame"
+        "main_frame",
+        "image"
       ],
       "target": "https://$1.media.tumblr.com/$21280.$3",
       "example": "https://68.media.tumblr.com/3beca4f8c1e028a29e87394de17c86b1/tumblr_o2qh8ztGAt1r7hrego2_500.jpg",
