@@ -197,14 +197,14 @@
     },
     {
       "description": "TPRSS生成的RSS图片直接显示原图（如果作用于image，会导致InoReader破图，只能作用于地址栏。）",
-      "origin": "^https?://tprss.puteulanus.com/index.php\\?pic=https?://pbs.twimg.com/media/(\\w+).(jpg|jpeg|gif|png|bmp|webp)(&ssitoken_\\d+_)?",
+      "origin": "^https?://tprss.puteulanus.com/index.php\\?pic=https?://pbs.twimg.com/media/(\\S+).(jpg|jpeg|gif|png|bmp|webp)(&ssitoken_\\d+_)?",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
       "target": "https://pbs.twimg.com/media/$1.$2:orig",
-      "example": "http://tprss.puteulanus.com/index.php?pic=http://pbs.twimg.com/media/C4XkyDMVMAAbqKK.jpg&ssitoken_1486997552333_",
+      "example": "http://tprss.puteulanus.com/index.php?pic=http://pbs.twimg.com/media/C6T3cdEU4AEcnf-.jpg",
       "enable": true
     },
     {
