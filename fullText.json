@@ -15,15 +15,15 @@
       "enable": true
     },
     {
-      "description": "观察者网",
-      "origin": "www.guancha.cn/(\\S+/\\d+_\\d+_\\d+_\\d+).shtml$",
+      "description": "观察者网——个人无所谓破坏评论",
+      "origin": "^https?://www.guancha.cn/(\\S+/\\d+_\\d+_\\d+_\\d+)(_\d)?.shtml$",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
-      "target": "www.guancha.cn/$1_s.shtml",
-      "example": "http://www.guancha.cn/military-affairs/2016_12_15_384529.shtml",
+      "target": "https://www.guancha.cn/$1_s.shtml",
+      "example": "http://www.guancha.cn/chenjing/2017_03_16_399011_1.shtml",
       "enable": true
     },
     {
