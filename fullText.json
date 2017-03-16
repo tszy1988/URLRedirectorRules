@@ -16,7 +16,7 @@
     },
     {
       "description": "观察者网——个人无所谓破坏评论",
-      "origin": "^https?://www.guancha.cn/(\\S+/\\d+_\\d+_\\d+_\\d+)(_\d)?.shtml$",
+      "origin": "^https?://www.guancha.cn/(\\S+/\\d{4}_\\d{2}_\\d{2}_\\d+)(_[1-9])?.shtml$",
       "exclude": "",
       "methods": [],
       "types": [
