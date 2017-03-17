@@ -257,6 +257,18 @@
       "example": "https://v.youku.com/v_show/id_XMTY0MjIyMDU3Mg==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
       "exampleURL": "https://v.youku.com/v_show/id_XMjUxOTMxMjU2NA==.html?spm=a2h1n.8251846.0.0",
       "enable": true
+    },
+    {
+      "description": "知乎链接重定向",
+      "origin": "^https://www.zhihu.com/question/(https?://\\S+)",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "$1",
+      "example": "https://www.zhihu.com/question/http://www.changlai.net",
+      "enable": true
     }
   ]
 }
