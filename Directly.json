@@ -41,6 +41,18 @@
       "enable": true
     },
     {
+      "description": "谷歌翻译",
+      "origin": "^https?://translate.google.com/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "https://translate.google.cn/",
+      "example": "",
+      "exampleURL": "",
+      "exampleURL": "",
+      "enable": true
+    },
+    {
       "description": "GreasyFork网址大小写敏感",
       "origin": "^https://greasyfork.org/zh-(cn|tw|TW)",
       "exclude": "",
