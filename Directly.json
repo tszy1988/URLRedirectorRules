@@ -220,6 +220,18 @@
       "enable": true
     },
     {
+      "description": "https://www.sinaimg.cn/ 使用了过时的安全技术，较容易遭受攻击。",
+      "origin": "^https://www.sinaimg.cn/",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://wwws.sinaimg.cn/",
+      "example": "https://www.sinaimg.cn/dy/datepicker/js/datepicker-pack.js",
+      "enable": true
+    },
+    {
       "description": "将特定微博信息从微博看看跳转至阅读体验更好的微博HTML5版",
       "origin": "^https?://weibo.wbdacdn.com/user/\\d+/status(\\d+).html.*",
       "exclude": "",
