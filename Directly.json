@@ -224,9 +224,7 @@
       "origin": "^https://www.sinaimg.cn/",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": [],
       "target": "https://wwws.sinaimg.cn/",
       "example": "https://www.sinaimg.cn/dy/datepicker/js/datepicker-pack.js",
       "enable": true
