@@ -1,5 +1,5 @@
 {
-  "version": "1.3.1",
+  "version": "1.3.11",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -64,18 +64,6 @@
       "example": "https://greasyfork.org/zh-tw",
       "exampleURL": "https://greasyfork.org/zh-cn/",
       "exampleURL": "https://greasyfork.org/zh-TW/",
-      "enable": true
-    },
-    {
-      "description": "GreasyFork强制简体中文",
-      "origin": "^https://greasyfork.org/\\S+/(forum|help|scripts|users)",
-      "exclude": "https://greasyfork.org/zh-CN/",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://greasyfork.org/zh-CN/$1",
-      "example": "https://greasyfork.org/en/scripts/1-greasemonkey-test-style",
       "enable": true
     },
     {
@@ -220,7 +208,7 @@
       "enable": true
     },
     {
-      "description": "https://www.sinaimg.cn/ 使用了过时的安全技术，较容易遭受攻击。",
+      "description": "https://www.sinaimg.cn/ 使用了无效的安全证书。",
       "origin": "^https://www.sinaimg.cn/",
       "exclude": "",
       "methods": [],
@@ -239,6 +227,18 @@
       ],
       "target": "https://m.weibo.cn/status/$1",
       "example": "http://weibo.wbdacdn.com/user/2803301701/status4074010167896825.html#utm_source=rss",
+      "enable": true
+    },
+    {
+      "description": "用户样式库直接选择用户名密码登录",
+      "origin": "https://userstyles.org/login$",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://userstyles.org/login?view=password",
+      "example": "https://userstyles.org/login",
       "enable": true
     },
     {
