@@ -53,20 +53,6 @@
       "enable": true
     },
     {
-      "description": "GreasyFork网址大小写敏感",
-      "origin": "^https://greasyfork.org/zh-(cn|tw|TW)",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://greasyfork.org/zh-CN",
-      "example": "https://greasyfork.org/zh-tw",
-      "exampleURL": "https://greasyfork.org/zh-cn/",
-      "exampleURL": "https://greasyfork.org/zh-TW/",
-      "enable": true
-    },
-    {
       "description": "Mozest广场无图版转至完整版",
       "origin": "^https?://g.mozest.com/archiver/tid-(\\d+).html$",
       "exclude": "",
