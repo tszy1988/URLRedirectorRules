@@ -78,6 +78,18 @@
       "enable": true
     },
     {
+      "description": "网易云课堂查看视频地址去除前置 IP 统一到 HTTPS 域名",
+      "origin": "http://((?:(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d)))\\.){3}(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d))))/video.study.163.com/edu-video/",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://video.study.163.com/edu-video/",
+      "example": "http://153.99.174.201/video.study.163.com/edu-video/nos/mp4/2016/04/03/1004263157_d377455ceee943939993924c303687f3_shd.mp4",
+      "enable": true
+    },
+    {
       "description": "my.pCloud.com",
       "origin": "d1q46pwrruta9x.cloudfront.net",
       "exclude": "",
@@ -99,21 +111,6 @@
       ],
       "target": "www.pCloud.com",
       "example": "https://d2k5eplsbcgehr.cloudfront.net/Z2e/js/jquery.min.js",
-      "enable": true
-    },
-    {
-      "description": "微信-公众平台图片反盗链+修复Firefox不支持WebP",
-      "origin": "^https?://(mmbiz.qpic.cn/[^?]+)\\?.*",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
-      "target": "https://$1",
-      "example": "http://mmbiz.qpic.cn/mmbiz_png/Fq21c9mIAf8mb2aJmGLW2lV0ELRc74HAn4UwMvuMibVAOiaWuia5rjAaIP7lHsCQ4WbQC0aYicO8HAvUbgp8o8LRMQ/640?tp=webp&wxfrom=5&wx_lazy=1",
-      "exampleURL": "http://mmbiz.qpic.cn/mmbiz/XO9Nbaxia0HwlPFHl1eRaMkpdqUlZsPqiacyAUSicjESqtsLOJ0OXYIDEyd5XSicxSe3tMD8NxRftYDWFnFibwHW4Gg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1",
-      "exampleURL": "https://ding.youku.com/a/id_XMTY2NDYw.html",
       "enable": true
     },
     {
