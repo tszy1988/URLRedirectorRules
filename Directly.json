@@ -79,14 +79,14 @@
     },
     {
       "description": "网易云课堂查看视频地址去除前置 IP 统一到 HTTPS 域名",
-      "origin": "http://((?:(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d)))\\.){3}(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d))))/video.study.163.com/edu-video/",
+      "origin": "http://((?:(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d)))\\.){3}(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d))))/video.study.163.com/",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
-      "target": "https://video.study.163.com/edu-video/",
-      "example": "http://153.99.174.201/video.study.163.com/edu-video/nos/mp4/2016/04/03/1004263157_d377455ceee943939993924c303687f3_shd.mp4",
+      "target": "https://video.study.163.com/",
+      "example": "http://153.99.174.201/video.study.163.com/yooc-video/nos/mp4/2014/11/27/958007_shd.mp4",
       "enable": true
     },
     {
