@@ -1,5 +1,5 @@
 {
-  "version": "1.3.1",
+  "version": "1.3.11",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -15,7 +15,7 @@
       "enable": true
     },
     {
-      "description": "观察者网——个人无所谓破坏评论",
+      "description": "观察者网",
       "origin": "^https?://www.guancha.cn/(\\S+/\\d{4}_\\d{2}_\\d{2}_\\d+)(_[1-9])?.shtml$",
       "exclude": "",
       "methods": [],
