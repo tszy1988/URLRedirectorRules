@@ -27,6 +27,14 @@ Todo:
 
 目前按照顶级域名字母排序。
 
-Todo:
+多测试链接：内置测试只能容纳 1 个链接。
 
-- 待浏览器同步功能完成，拆分为针对各个站点的小规则，以便于维护。
+http://image.coolapk.com/feed/2017/0225/689514_1487997452_9028.png.s.jpg
+
+http://image.coolapk.com/apk_image/2017/0217/Screenshot_20170217-110627-for-128915-o_1b95esn8erqa1efbdrm1cbk1cr010-uid-689514.png.t.jpg
+
+http://weibo.wbdacdn.com/url/t/RIo18YK/
+
+https://www.weibo.com/ttarticle/p/show?id=2309404053250302152589#_0
+
+https://v.youku.com/v_show/id_XMjUxOTMxMjU2NA==.html?spm=a2h1n.8251846.0.0

@@ -3,69 +3,7 @@
   "createdAt": "2017-03-02",
   "rules": [
     {
-      "description": "酷安显示原图",
-      "origin": "^http://image.coolapk.com/(feed|apk_image)/(\\S+).(jpg|jpeg|gif|png|bmp|webp).(m|s|t).(jpg|jpeg|gif|png|bmp|webp)",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "http://image.coolapk.com/$1/$2.$3",
-      "example": "http://image.coolapk.com/feed/2017/0225/689514_1487997452_9028.png.m.jpg",
-      "exampleURL": "http://image.coolapk.com/feed/2017/0225/689514_1487997452_9028.png.s.jpg",
-      "exampleURL": "http://image.coolapk.com/apk_image/2017/0217/Screenshot_20170217-110627-for-128915-o_1b95esn8erqa1efbdrm1cbk1cr010-uid-689514.png.t.jpg",
-      "enable": true
-    },
-    {
-      "description": "豆瓣跳过注册页面直接加密登陆",
-      "origin": "^https?://www.douban.com/accounts/register$",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://www.douban.com/accounts/login",
-      "example": "http://www.douban.com/accounts/register",
-      "enable": true
-    },
-    {
-      "description": "Dropbpx跳过下载页直接进入直链",
-      "origin": "^https://www.dropbox.com/s/(.*)\\?dl=0",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://dl.dropboxusercontent.com/s/$1",
-      "example": "https://www.dropbox.com/s/rnx6mxpe5s44pa2/Redirector.txt?dl=0",
-      "enable": true
-    },
-    {
-      "description": "谷歌翻译",
-      "origin": "^https?://translate.google.com/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://translate.google.cn/",
-      "example": "",
-      "exampleURL": "",
-      "exampleURL": "",
-      "enable": true
-    },
-    {
-      "description": "Mozest广场无图版转至完整版",
-      "origin": "^https?://g.mozest.com/archiver/tid-(\\d+).html$",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "http://g.mozest.com/viewthread.php?tid=$1",
-      "example": "http://g.mozest.com/archiver/tid-38916.html",
-      "enable": true
-    },
-    {
-      "description": "Lofter显示原图",
+      "description": "Lofter 显示原图",
       "origin": "^https?://(imglf(\\d)?.nosdn.127.net/img/\\w+.(jpg|jpeg|gif|png|bmp|webp))\\?.*",
       "exclude": "",
       "methods": [],
@@ -90,15 +28,61 @@
       "enable": true
     },
     {
-      "description": "my.pCloud.com",
-      "origin": "d1q46pwrruta9x.cloudfront.net",
+      "description": "酷安显示原图",
+      "origin": "^http://image.coolapk.com/(feed|apk_image)/(\\S+).(jpg|jpeg|gif|png|bmp|webp).(m|s|t).(jpg|jpeg|gif|png|bmp|webp)",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
-      "target": "my.pcloud.com",
-      "example": "https://d1q46pwrruta9x.cloudfront.net/img/up-normal.png",
+      "target": "http://image.coolapk.com/$1/$2.$3",
+      "example": "http://image.coolapk.com/feed/2017/0225/689514_1487997452_9028.png.m.jpg",
+      "enable": true
+    },
+    {
+      "description": "豆瓣跳过注册页面直接加密登陆",
+      "origin": "^https?://www.douban.com/accounts/register$",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://www.douban.com/accounts/login",
+      "example": "http://www.douban.com/accounts/register",
+      "enable": true
+    },
+    {
+      "description": "Dropbpx 跳过下载页直接进入直链",
+      "origin": "^https://www.dropbox.com/s/(.*)\\?dl=0",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://dl.dropboxusercontent.com/s/$1",
+      "example": "https://www.dropbox.com/s/rnx6mxpe5s44pa2/Redirector.txt?dl=0",
+      "enable": true
+    },
+    {
+      "description": "谷歌翻译",
+      "origin": "^https?://translate.google.com/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "https://translate.google.cn/",
+      "example": "",
+      "enable": true
+    },
+    {
+      "description": "Mozest 广场无图版转至完整版",
+      "origin": "^https?://g.mozest.com/archiver/tid-(\\d+).html$",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "http://g.mozest.com/viewthread.php?tid=$1",
+      "example": "http://g.mozest.com/archiver/tid-38916.html",
       "enable": true
     },
     {
@@ -111,6 +95,28 @@
       ],
       "target": "www.pCloud.com",
       "example": "https://d2k5eplsbcgehr.cloudfront.net/Z2e/js/jquery.min.js",
+      "enable": true
+    },
+    {
+      "description": "my.pCloud.com",
+      "origin": "d1q46pwrruta9x.cloudfront.net",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "my.pcloud.com",
+      "example": "https://d1q46pwrruta9x.cloudfront.net/img/up-normal.png",
+      "enable": true
+    },
+    {
+      "description": "https://www.sinaimg.cn/ 使用了无效的安全证书。",
+      "origin": "^https://www.sinaimg.cn/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "https://wwws.sinaimg.cn/",
+      "example": "https://www.sinaimg.cn/dy/datepicker/js/datepicker-pack.js",
       "enable": true
     },
     {
@@ -138,7 +144,7 @@
       "enable": true
     },
     {
-      "description": "修正Tumblr失效的外链 http://bbs.kafan.cn/thread-2075486-1-1.html",
+      "description": "修正 Tumblr 失效的外链 https://www.reddit.com/domain/$1.media.tumblr.com/",
       "origin": "^https?://(41|65|67).media.tumblr.com/",
       "exclude": "",
       "methods": [],
@@ -148,13 +154,10 @@
       ],
       "target": "https://68.media.tumblr.com/",
       "example": "http://41.media.tumblr.com/2e2b4f5c659dca9b09d9b8a881656d82/tumblr_o0y4zmaRxk1t52mpao1_500.jpg",
-      "exampleURL": "https://www.reddit.com/domain/41.media.tumblr.com/",
-      "exampleURL": "https://www.reddit.com/domain/65.media.tumblr.com/",
-      "exampleURL": "https://www.reddit.com/domain/67.media.tumblr.com/",
       "enable": true
     },
     {
-      "description": "Tumblr图片显示最大化，可作用于InoReader",
+      "description": "Tumblr 图片显示最大化，可作用于InoReader",
       "origin": "^https?://(\\d+).media.tumblr.com/(.+tumblr_\\w+_)500.(jpg|jpeg|gif|png|bmp|webp)(\\?ssitoken_\\d+_)?$",
       "exclude": "",
       "methods": [],
@@ -167,7 +170,7 @@
       "enable": true
     },
     {
-      "description": "Twitter短链判断失败时去除混入的尾部中文等字符",
+      "description": "Twitter 短链判断失败时去除混入的尾部中文等字符",
       "origin": "^https?://t.co/(\\w{10}).+",
       "exclude": "",
       "methods": [],
@@ -179,7 +182,7 @@
       "enable": true
     },
     {
-      "description": "TPRSS生成的RSS图片直接显示原图（如果作用于image，会导致InoReader破图，只能作用于地址栏。）",
+      "description": "TPRSS 生成的RSS图片直接显示原图（如果作用于 image，会导致 InoReader 破图，只能作用于地址栏。）",
       "origin": "^https?://tprss.puteulanus.com/index.php\\?pic=https?://pbs.twimg.com/media/(\\S+).(jpg|jpeg|gif|png|bmp|webp)(&ssitoken_\\d+_)?",
       "exclude": "",
       "methods": [],
@@ -188,28 +191,6 @@
       ],
       "target": "https://pbs.twimg.com/media/$1.$2:orig",
       "example": "http://tprss.puteulanus.com/index.php?pic=http://pbs.twimg.com/media/C6T3cdEU4AEcnf-.jpg",
-      "enable": true
-    },
-    {
-      "description": "https://www.sinaimg.cn/ 使用了无效的安全证书。",
-      "origin": "^https://www.sinaimg.cn/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://wwws.sinaimg.cn/",
-      "example": "https://www.sinaimg.cn/dy/datepicker/js/datepicker-pack.js",
-      "enable": true
-    },
-    {
-      "description": "将特定微博信息从微博看看跳转至阅读体验更好的微博HTML5版",
-      "origin": "^https?://weibo.wbdacdn.com/user/\\d+/status(\\d+).html.*",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://m.weibo.cn/status/$1",
-      "example": "http://weibo.wbdacdn.com/user/2803301701/status4074010167896825.html#utm_source=rss",
       "enable": true
     },
     {
@@ -234,7 +215,18 @@
       ],
       "target": "t.cn/$1",
       "example": "http://weibo.wbdacdn.com/url/t/R5mLykn",
-      "exampleURL": "http://weibo.wbdacdn.com/url/t/RIo18YK/",
+      "enable": true
+    },
+    {
+      "description": "将特定微博信息从微博看看跳转至阅读体验更好的微博HTML5版",
+      "origin": "^https?://weibo.wbdacdn.com/user/\\d+/status(\\d+).html.*",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://m.weibo.cn/status/$1",
+      "example": "http://weibo.wbdacdn.com/user/2803301701/status4074010167896825.html#utm_source=rss",
       "enable": true
     },
     {
@@ -247,7 +239,6 @@
       ],
       "target": "https://media.weibo.cn/article",
       "example": "http://weibo.com/ttarticle/p/show?id=2309404056722711967901",
-      "exampleURL": "http://www.weibo.com/ttarticle/p/show?id=2309404053250302152589#_0",
       "enable": true
     },
     {
@@ -260,7 +251,6 @@
       ],
       "target": "https://v.youku.com/v_show/id_$1.html",
       "example": "https://v.youku.com/v_show/id_XMTY0MjIyMDU3Mg==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
-      "exampleURL": "https://v.youku.com/v_show/id_XMjUxOTMxMjU2NA==.html?spm=a2h1n.8251846.0.0",
       "enable": true
     },
     {
