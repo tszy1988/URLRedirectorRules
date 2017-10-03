@@ -145,7 +145,7 @@
     },
     {
       "description": "修正 Tumblr 失效的外链 https://www.reddit.com/domain/$1.media.tumblr.com/",
-      "origin": "^https?://(41|65|67).media.tumblr.com/",
+      "origin": "^https?://(41|65|67|78).media.tumblr.com/",
       "exclude": "",
       "methods": [],
       "types": [
