@@ -165,7 +165,7 @@
         "main_frame",
         "image"
       ],
-      "target": "https://media.tumblr.com/$2raw.$3",
+      "target": "https://$1.media.tumblr.com/$21280.$3",
       "example": "https://68.media.tumblr.com/3beca4f8c1e028a29e87394de17c86b1/tumblr_o2qh8ztGAt1r7hrego2_500.jpg",
       "enable": true
     },
