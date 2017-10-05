@@ -40,7 +40,7 @@
       "enable": true
     },
     {
-      "description": "豆瓣跳过注册页面直接加密登陆",
+      "description": "豆瓣跳过注册页面直接加密登录",
       "origin": "^https?://www.douban.com/accounts/register$",
       "exclude": "",
       "methods": [],
@@ -251,6 +251,18 @@
       ],
       "target": "https://v.youku.com/v_show/id_$1.html",
       "example": "https://v.youku.com/v_show/id_XMTY0MjIyMDU3Mg==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
+      "enable": true
+    },
+    {
+      "description": "知乎跳过注册页面直接登录",
+      "origin": "^https?://www.zhihu.com/#signup$",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://www.zhihu.com/#signin",
+      "example": "https://www.zhihu.com/#signup",
       "enable": true
     },
     {
