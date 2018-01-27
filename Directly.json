@@ -242,6 +242,18 @@
       "enable": true
     },
     {
+      "description": "修复挖矿网 RSS 输出图片错误",
+      "origin": "^https://wk588.com/wp-content/uploads/(\\d{4}/\\d{2}/\\w+.(jpg|jpeg|gif|png|bmp|webp))$",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "image"
+      ],
+      "target": "https://img.wk588.com/wp-content/uploads/$1",
+      "example": "https://wk588.com/wp-content/uploads/2018/01/134011hyjgwm9qmukzumy2.png",
+      "enable": true
+    },
+    {
       "description": "去除优酷来源后缀",
       "origin": "^https?://v.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?.*)",
       "exclude": "",
