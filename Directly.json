@@ -243,7 +243,7 @@
     },
     {
       "description": "修复挖矿网 RSS 输出图片错误",
-      "origin": "^https://wk588.com/wp-content/uploads/(\\d{4}/\\d{2}/\\w+.(jpg|jpeg|gif|png|bmp|webp))$",
+      "origin": "^https://wk588.com/wp-content/uploads/(\\d{4}/\\d{2}/\\S+.(jpg|jpeg|gif|png|bmp|webp))$",
       "exclude": "",
       "methods": [],
       "types": [
