@@ -247,6 +247,7 @@
       "exclude": "",
       "methods": [],
       "types": [
+        "main_frame",
         "image"
       ],
       "target": "https://img.wk588.com/wp-content/uploads/$1",
