@@ -110,16 +110,6 @@
       "enable": true
     },
     {
-      "description": "https://www.sinaimg.cn/ 使用了无效的安全证书。",
-      "origin": "^https://www.sinaimg.cn/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://wwws.sinaimg.cn/",
-      "example": "https://www.sinaimg.cn/dy/datepicker/js/datepicker-pack.js",
-      "enable": true
-    },
-    {
       "description": "去除垃圾跳转",
       "origin": "^http://www.spmke.com/source/bd.php\\?(https?://.+)",
       "exclude": "",
@@ -203,42 +193,6 @@
       ],
       "target": "https://userstyles.org/login?view=password",
       "example": "https://userstyles.org/login",
-      "enable": true
-    },
-    {
-      "description": "跳过微博看看框架",
-      "origin": "weibo.wbdacdn.com/url/t/(\\w{7})/?",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "t.cn/$1",
-      "example": "http://weibo.wbdacdn.com/url/t/R5mLykn",
-      "enable": true
-    },
-    {
-      "description": "将特定微博信息从微博看看跳转至阅读体验更好的微博HTML5版",
-      "origin": "^https?://weibo.wbdacdn.com/user/\\d+/status(\\d+).html.*",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://m.weibo.cn/status/$1",
-      "example": "http://weibo.wbdacdn.com/user/2803301701/status4074010167896825.html#utm_source=rss",
-      "enable": true
-    },
-    {
-      "description": "微博文章自动跳转到移动版",
-      "origin": "^https?://(www.)?weibo.com/ttarticle/p/show",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://media.weibo.cn/article",
-      "example": "http://weibo.com/ttarticle/p/show?id=2309404056722711967901",
       "enable": true
     },
     {
