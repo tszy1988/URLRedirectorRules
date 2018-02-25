@@ -4,11 +4,13 @@
   "rules": [
     {
         "description": "新浪博客文章自动跳转到移动版",
-        "origin": "^http://blog.sina.com.cn/(s/blog_\\w+.html).*",
+        "origin": "blog.sina.com.cn/(s/blog_\\w+.html).*",
         "exclude": "",
         "methods": [],
-        "types": [],
-        "target": "http://blog.sina.cn/dpool/blog/$1",
+        "types": [
+          "main_frame"
+        ],
+        "target": "blog.sina.cn/dpool/blog/$1",
         "example": "http://blog.sina.com.cn/s/blog_4e51dd500102xdzi.html",
         "enable": true
     },
