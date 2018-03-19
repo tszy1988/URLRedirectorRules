@@ -3,7 +3,7 @@ Personal Rules for URLRedirector
 
 ## [Sina](https://github.com/ivysrono/URLRedirectorRules/raw/master/Sina.json)
 
-## [gooreplacerWithDecentraleyes](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/gooreplacerWithDecentraleyes.json)
+## [gooreplacerWithDecentraleyes](https://github.com/ivysrono/URLRedirectorRules/raw/master/gooreplacerWithDecentraleyes.json)
 
 绕过 Decentraleyes 已经内置的部分常用库。
 
@@ -19,11 +19,11 @@ Todo:
 
 - 将已经失效的 360 库重定向到 Google.
 
-## [fullText](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/fullText.json)
+## [fullText](https://github.com/ivysrono/URLRedirectorRules/raw/master/fullText.json)
 
 部分网站可以通过网址改变来默认显示全文。
 
-## [Directly](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/Directly.json)
+## [Directly](https://github.com/ivysrono/URLRedirectorRules/raw/master/Directly.json)
 
 特别提醒：该规则极具个人属性，大量破坏网站原有功能，请仔细阅读每条规则的说明并实际测试后，谨慎实用！！！
 
