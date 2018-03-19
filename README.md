@@ -1,6 +1,8 @@
 # URLRedirectorRules
 Personal Rules for URLRedirector
 
+## [Sina](https://github.com/ivysrono/URLRedirectorRules/raw/master/Sina.json)
+
 ## [gooreplacerWithDecentraleyes](https://raw.githubusercontent.com/ivysrono/URLRedirectorRules/master/gooreplacerWithDecentraleyes.json)
 
 绕过 Decentraleyes 已经内置的部分常用库。
