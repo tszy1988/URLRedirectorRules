@@ -3,21 +3,7 @@ Personal Rules for URLRedirector
 
 ## [Sina](https://github.com/ivysrono/URLRedirectorRules/raw/master/Sina.json)
 
-## [gooreplacerWithDecentraleyes](https://github.com/ivysrono/URLRedirectorRules/raw/master/gooreplacerWithDecentraleyes.json)
-
-绕过 Decentraleyes 已经内置的部分常用库。
-
-Test:
-
-[jquery3.1.1](https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js)
-
-[jquery2.1.4](https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js)
-
-Todo:
-
-- 期待 [官方支持](https://github.com/fengyc/URLRedirector/issues/10)
-
-- 将已经失效的 360 库重定向到 Google.
+## [gooreplacer](https://github.com/ivysrono/URLRedirectorRules/raw/master/gooreplacer.json)
 
 ## [fullText](https://github.com/ivysrono/URLRedirectorRules/raw/master/fullText.json)
 
@@ -30,8 +16,6 @@ Todo:
 目前按照顶级域名字母排序。
 
 多测试链接：内置测试只能容纳 1 个链接。
-
-http://image.coolapk.com/feed/2017/0225/689514_1487997452_9028.png.s.jpg
 
 http://image.coolapk.com/apk_image/2017/0217/Screenshot_20170217-110627-for-128915-o_1b95esn8erqa1efbdrm1cbk1cr010-uid-689514.png.t.jpg
 
