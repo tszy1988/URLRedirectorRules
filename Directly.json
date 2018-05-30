@@ -1,46 +1,9 @@
 {
-  "version": "1.3.11",
+  "version": "1.3.11.20180530",
   "createdAt": "2017-03-02",
   "rules": [
     {
-      "description": "Lofter 显示原图",
-      "origin": "^https?://(imglf(\\d)?.nosdn.127.net/img/\\w+.(jpg|jpeg|gif|png|bmp|webp))\\?.*",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
-      "target": "https://$1",
-      "example": "https://imglf.nosdn.127.net/img/T0VLUWtpQlNHSmVHYlM0QU01cElqRE0vM09ETzRKTEtjK3hROFpqSk9QMm1GWXlaL2EwQ1hBPT0.jpeg?imageView&thumbnail=500x10000&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=1&dx=0&gravity=southwest&dissolve=100&image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=&ssitoken_1479551598431_",
-      "enable": true
-    },
-    {
-      "description": "网易云课堂查看视频地址去除前置 IP 统一到 HTTPS 域名",
-      "origin": "http://((?:(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d)))\\.){3}(?:25[0-5]|2[0-4]\\d|((1\\d{2})|([1-9]?\\d))))/video.study.163.com/",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://video.study.163.com/",
-      "example": "http://153.99.174.201/video.study.163.com/yooc-video/nos/mp4/2014/11/27/958007_shd.mp4",
-      "enable": true
-    },
-    {
-      "description": "酷安显示原图",
-      "origin": "^http://image.coolapk.com/(feed|apk_image)/(\\S+).(jpg|jpeg|gif|png|bmp|webp).(m|s|t).(jpg|jpeg|gif|png|bmp|webp)",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "http://image.coolapk.com/$1/$2.$3",
-      "example": "http://image.coolapk.com/feed/2017/0225/689514_1487997452_9028.png.m.jpg",
-      "enable": true
-    },
-    {
-      "description": "豆瓣跳过注册页面直接加密登录",
+      "description": "直接登录：豆瓣跳过注册页面",
       "origin": "^https?://www.douban.com/accounts/register$",
       "exclude": "",
       "methods": [],
@@ -52,139 +15,7 @@
       "enable": true
     },
     {
-      "description": "Dropbpx 跳过下载页直接进入直链",
-      "origin": "^https://www.dropbox.com/s/(.*)\\?dl=0",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://dl.dropboxusercontent.com/s/$1",
-      "example": "https://www.dropbox.com/s/rnx6mxpe5s44pa2/Redirector.txt?dl=0",
-      "enable": true
-    },
-    {
-      "description": "谷歌翻译",
-      "origin": "^https?://translate.google.com/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://translate.google.cn/",
-      "example": "",
-      "enable": true
-    },
-    {
-      "description": "Mozest 广场无图版转至完整版",
-      "origin": "^https?://g.mozest.com/archiver/tid-(\\d+).html$",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "http://g.mozest.com/viewthread.php?tid=$1",
-      "example": "http://g.mozest.com/archiver/tid-38916.html",
-      "enable": true
-    },
-    {
-      "description": "www.pCloud.com",
-      "origin": "d2k5eplsbcgehr.cloudfront.net",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "www.pCloud.com",
-      "example": "https://d2k5eplsbcgehr.cloudfront.net/Z2e/js/jquery.min.js",
-      "enable": true
-    },
-    {
-      "description": "my.pCloud.com",
-      "origin": "d1q46pwrruta9x.cloudfront.net",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "my.pcloud.com",
-      "example": "https://d1q46pwrruta9x.cloudfront.net/img/up-normal.png",
-      "enable": true
-    },
-    {
-      "description": "去除垃圾跳转",
-      "origin": "^http://www.spmke.com/source/bd.php\\?(https?://.+)",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "$1",
-      "example": "http://www.spmke.com/source/bd.php?http://www.baidu.com",
-      "enable": true
-    },
-    {
-      "description": "去除今日头条尾巴",
-      "origin": "^https://www.toutiao.com/(a|i)(\\d+)/\\?.*",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://www.toutiao.com/$1$2/",
-      "example": "https://www.toutiao.com/i6385720374801203714/?tt_from=mobile_qq&utm_campaign=client_share&app=news_article&utm_source=mobile_qq&iid=7706731303&utm_medium=toutiao_ios",
-      "enable": true
-    },
-    {
-      "description": "修正 Tumblr 失效的外链 https://www.reddit.com/domain/$1.media.tumblr.com/",
-      "origin": "^https?://(41|65|67|78).media.tumblr.com/",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
-      "target": "https://68.media.tumblr.com/",
-      "example": "http://41.media.tumblr.com/2e2b4f5c659dca9b09d9b8a881656d82/tumblr_o0y4zmaRxk1t52mpao1_500.jpg",
-      "enable": true
-    },
-    {
-      "description": "Tumblr 图片显示最大化，可作用于InoReader",
-      "origin": "^https?://(\\d+).media.tumblr.com/(.+tumblr_\\w+_)500.(jpg|jpeg|gif|png|bmp|webp)(\\?ssitoken_\\d+_)?$",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
-      "target": "https://$1.media.tumblr.com/$21280.$3",
-      "example": "https://68.media.tumblr.com/3beca4f8c1e028a29e87394de17c86b1/tumblr_o2qh8ztGAt1r7hrego2_500.jpg",
-      "enable": true
-    },
-    {
-      "description": "Twitter 短链判断失败时去除混入的尾部中文等字符",
-      "origin": "^https?://t.co/(\\w{10}).+",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://t.co/$1",
-      "example": "http://t.co/shSgWRTz51张佳玮写字的地方",
-      "enable": true
-    },
-    {
-      "description": "TPRSS 生成的RSS图片直接显示原图（如果作用于 image，会导致 InoReader 破图，只能作用于地址栏。）",
-      "origin": "^https?://tprss.puteulanus.com/index.php\\?pic=https?://pbs.twimg.com/media/(\\S+).(jpg|jpeg|gif|png|bmp|webp)(&ssitoken_\\d+_)?",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://pbs.twimg.com/media/$1.$2:orig",
-      "example": "http://tprss.puteulanus.com/index.php?pic=http://pbs.twimg.com/media/C6T3cdEU4AEcnf-.jpg",
-      "enable": true
-    },
-    {
-      "description": "用户样式库直接选择用户名密码登录",
+      "description": "直接登录：用户样式库直接选择用户名密码登录模式",
       "origin": "https://userstyles.org/login$",
       "exclude": "",
       "methods": [],
@@ -196,32 +27,7 @@
       "enable": true
     },
     {
-      "description": "修复挖矿网 RSS 输出图片错误",
-      "origin": "^https://wk588.com/wp-content/uploads/(\\d{4}/\\d{2}/\\S+.(jpg|jpeg|gif|png|bmp|webp))$",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
-      "target": "https://img.wk588.com/wp-content/uploads/$1",
-      "example": "https://wk588.com/wp-content/uploads/2018/01/134011hyjgwm9qmukzumy2.png",
-      "enable": true
-    },
-    {
-      "description": "去除优酷来源后缀",
-      "origin": "^https?://v.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?.*)",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://v.youku.com/v_show/id_$1.html",
-      "example": "https://v.youku.com/v_show/id_XMTY0MjIyMDU3Mg==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
-      "enable": true
-    },
-    {
-      "description": "知乎跳过注册页面直接登录",
+      "description": "直接登录：知乎",
       "origin": "^https?://www.zhihu.com/#signup$",
       "exclude": "",
       "methods": [],
@@ -233,7 +39,31 @@
       "enable": true
     },
     {
-      "description": "知乎链接重定向",
+      "description": "直接下载：Dropbpx 跳过下载页直接进入直链",
+      "origin": "^https://www.dropbox.com/s/(.*)\\?dl=0",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://dl.dropboxusercontent.com/s/$1",
+      "example": "https://www.dropbox.com/s/rnx6mxpe5s44pa2/Redirector.txt?dl=0",
+      "enable": true
+    },
+    {
+      "description": "去除跳转：百度",
+      "origin": "^http://www.spmke.com/source/bd.php\\?(https?://.+)",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "$1",
+      "example": "http://www.spmke.com/source/bd.php?http://www.baidu.com",
+      "enable": true
+    },
+    {
+      "description": "去除跳转：知乎",
       "origin": "^https://www.zhihu.com/question/(https?://\\S+)",
       "exclude": "",
       "methods": [],
@@ -242,6 +72,42 @@
       ],
       "target": "$1",
       "example": "https://www.zhihu.com/question/http://www.changlai.net",
+      "enable": true
+    },
+    {
+      "description": "去除尾巴：今日头条",
+      "origin": "^https://www.toutiao.com/(a|i)(\\d+)/\\?.*",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://www.toutiao.com/$1$2/",
+      "example": "https://www.toutiao.com/i6385720374801203714/?tt_from=mobile_qq&utm_campaign=client_share&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_ios",
+      "enable": true
+    },
+    {
+      "description": "去除尾巴：Twitter 短链判断失败时混入的尾部中文等字符",
+      "origin": "^https?://t.co/(\\w{10}).+",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://t.co/$1",
+      "example": "http://t.co/shSgWRTz51张佳玮写字的地方",
+      "enable": true
+    },
+    {
+      "description": "去除尾巴：优酷",
+      "origin": "^https?://v.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://v.youku.com/v_show/id_$1.html",
+      "example": "https://v.youku.com/v_show/id_XMTY0MjIyMDU3Mg==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
       "enable": true
     }
   ]

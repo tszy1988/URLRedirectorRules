@@ -1,19 +1,13 @@
 # URLRedirectorRules
 Personal Rules for URLRedirector
 
-## [Sina](https://github.com/ivysrono/URLRedirectorRules/raw/master/Sina.json)
+## [readingMode](https://github.com/ivysrono/URLRedirectorRules/raw/master/readingMode.json)
 
 ## [gooreplacer](https://github.com/ivysrono/URLRedirectorRules/raw/master/gooreplacer.json)
-
-## [fullText](https://github.com/ivysrono/URLRedirectorRules/raw/master/fullText.json)
-
-部分网站可以通过网址改变来默认显示全文。
 
 ## [Directly](https://github.com/ivysrono/URLRedirectorRules/raw/master/Directly.json)
 
 特别提醒：该规则极具个人属性，大量破坏网站原有功能，请仔细阅读每条规则的说明并实际测试后，谨慎实用！！！
-
-目前按照顶级域名字母排序。
 
 多测试链接：内置测试只能容纳 1 个链接。
 

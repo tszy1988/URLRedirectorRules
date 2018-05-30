@@ -1,7 +1,17 @@
 {
-  "version": "2",
+  "version": "1.3.11.20180530",
   "createdAt": "2017-03-02",
   "rules": [
+    {
+      "description": "谷歌翻译",
+      "origin": "^https?://translate.google.com/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "https://translate.google.cn/",
+      "example": "",
+      "enable": true
+    },
     {
       "description": "Google -> 科大 1",
       "origin": "(ajax|fonts).googleapis.com",
