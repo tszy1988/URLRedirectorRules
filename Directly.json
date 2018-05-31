@@ -76,13 +76,13 @@
     },
     {
       "description": "去除尾巴：今日头条",
-      "origin": "^https://www.toutiao.com/(a|i)(\\d+)/\\?.*",
+      "origin": "^https://(www|m).toutiao(cdn)?.com/(a|i)(\\d+)/\\?.*",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
-      "target": "https://www.toutiao.com/$1$2/",
+      "target": "https://$1.toutiao.com/$2$3/",
       "example": "https://www.toutiao.com/i6385720374801203714/?tt_from=mobile_qq&utm_campaign=client_share&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_ios",
       "enable": true
     },
