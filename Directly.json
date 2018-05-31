@@ -1,5 +1,5 @@
 {
-  "version": "1.3.11.20180530",
+  "version": "1.3.11.20180531",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -76,7 +76,7 @@
     },
     {
       "description": "去除尾巴：今日头条",
-      "origin": "^https://(www|m).toutiao(cdn)?.com/(a|i)(\\d+)/\\?.*",
+      "origin": "^https?://(www|m).toutiao(cdn)?.com/(a|i)(\\d+)/\\?.*",
       "exclude": "",
       "methods": [],
       "types": [
