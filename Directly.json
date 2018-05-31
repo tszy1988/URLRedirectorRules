@@ -76,7 +76,7 @@
     },
     {
       "description": "去除尾巴：今日头条",
-      "origin": "^https?://(www|m).toutiao(cdn)?.com/(a|i)(\\d+)(/\\?.*)?",
+      "origin": "^https?://(www|m).toutiao(cdn)?.com/(a|i)(\\d+)/\\?.*",
       "exclude": "",
       "methods": [],
       "types": [
@@ -100,7 +100,7 @@
     },
     {
       "description": "去除尾巴：优酷",
-      "origin": "^https?://v.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?.*)",
+      "origin": "^https?://v.youku.com/v_show/id_(\\w+)(==_?.*)?.html\\?.*",
       "exclude": "",
       "methods": [],
       "types": [
