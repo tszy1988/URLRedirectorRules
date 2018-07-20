@@ -34,22 +34,22 @@
     },
     {
       "description": "Google -> 科大 1",
-      "origin": "(ajax|fonts).googleapis.com",
+      "origin": "^https?://(ajax|fonts).googleapis.com",
       "exclude": "",
       "methods": [],
       "types": [],
-      "target": "$1.proxy.ustclug.org",
+      "target": "https://$1.proxy.ustclug.org",
       "example": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
       "exampleURL": "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
       "enable": true
     },
     {
       "description": "Google -> 科大 2",
-      "origin": "themes.googleusercontent.com",
+      "origin": "^https?://themes.googleusercontent.com",
       "exclude": "",
       "methods": [],
       "types": [],
-      "target": "google-themes.proxy.ustclug.org",
+      "target": "https://google-themes.proxy.ustclug.org",
       "example": "https://themes.googleusercontent.com/static/fonts/antic/v4/hEa8XCNM7tXGzD0Uk0AipA.ttf",
       "enable": true
     },
@@ -163,13 +163,13 @@
     },
     {
         "description": "阅读模式：网易新闻APP分享产生地址重定向至更适合网页阅读版本",
-        "origin": "c.m.163.com/news/a/(\\w+).html(\\?.*)?",
+        "origin": "^https?://c.m.163.com/news/a/(\\w+).html(\\?.*)?",
         "exclude": "",
         "methods": [],
         "types": [
           "main_frame"
         ],
-        "target": "3g.163.com/news/article/$1.html",
+        "target": "https://3g.163.com/news/article/$1.html",
         "example": "",
         "enable": true
     },
@@ -199,13 +199,13 @@
     },
     {
       "description": "阅读模式：跳过微博看看框架",
-      "origin": "weibo.wbdacdn.com/url/t/(\\w{7})/?",
+      "origin": "^https?://weibo.wbdacdn.com/url/t/(\\w{7})/?",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
-      "target": "t.cn/$1",
+      "target": "https://t.cn/$1",
       "example": "http://weibo.wbdacdn.com/url/t/R5mLykn",
       "enable": true
     },
@@ -235,13 +235,13 @@
     },
     {
       "description": "自动全文：FT中文网",
-      "origin": "www.ftchinese.com/story/(\\d+)$",
+      "origin": "^https?://www.ftchinese.com/story/(\\d+)$",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
-      "target": "www.ftchinese.com/story/$1?full=y",
+      "target": "https://www.ftchinese.com/story/$1?full=y",
       "example": "http://www.ftchinese.com/story/001053184",
       "enable": true
     },
@@ -259,13 +259,13 @@
     },
     {
       "description": "自动全文：法律图书馆",
-      "origin": "www.law-lib.com/law/law_view.asp\\?id=(\\d+)$",
+      "origin": "^https?://www.law-lib.com/law/law_view.asp\\?id=(\\d+)$",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
-      "target": "www.law-lib.com/law/law_view1.asp?id=$1",
+      "target": "http://www.law-lib.com/law/law_view1.asp?id=$1",
       "example": "http://www.law-lib.com/law/law_view.asp?id=499805",
       "enable": true
     },
