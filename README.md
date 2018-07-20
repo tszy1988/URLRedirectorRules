@@ -11,6 +11,10 @@ http://weibo.wbdacdn.com/url/t/RIo18YK/
 
 https://v.youku.com/v_show/id_XMjUxOTMxMjU2NA==.html?spm=a2h1n.8251846.0.0
 
+http://s.img.mix.sina.com.cn/auto/resize?size=328_218&img=http://sinastorage.com/storage.zone.photo.sina.com.cn/zone/img/20180706/faaee204a0201e195e2386c0dbd9eebe.jpg%3F%26ssig%3DtxRpBxwloQ%26KID%3Dsina%2Cslidenews%26Expires%3D1532105875
+
+
 获取测试：
 
 https://photo.sina.com.cn/
+
