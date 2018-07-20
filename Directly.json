@@ -3,6 +3,26 @@
   "createdAt": "2017-03-02",
   "rules": [
     {
+      "description": "常见网址乱码修复—— :",
+      "origin": "^(https?)://(.*)%3A(.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "$1://$2:$3",
+      "example": "http://s.img.mix.sina.com.cn/auto/resize?img=http%3A//n.sinaimg.cn/ent/4_img/upload/dbf8751d/296/w1618h1078/20180715/ZuJX-hfhfwmv7334800.jpg&size=100_100",
+      "enable": true
+    },
+    {
+      "description": "常见网址乱码修复—— /",
+      "origin": "^(https?)://(.*)%2F(.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "$1://$2/$3",
+      "example": "https://s.img.mix.sina.com.cn/auto/resize?img=http%3A%2F%2Fn.sinaimg.cn%2Fent%2F4_img%2Fupload%2Fdbf8751d%2F296%2Fw1618h1078%2F20180715%2FZuJX-hfhfwmv7334800.jpg&size=100_100",
+      "enable": true
+    },
+    {
       "description": "Google 翻译",
       "origin": "^https?://translate.google.com/",
       "exclude": "",
@@ -263,8 +283,8 @@
       "enable": true
     },
     {
-      "description": "原图显示：新浪新闻相关新闻封面缩略图1加密",
-      "origin": "^https?://s.img.mix.sina.com.cn/\\S+/resize\\?(\\S+)?img=(https?:)?//(\\w.sinaimg.cn/\\S+)(&size=.*)?",
+      "description": "原图显示：新浪缩略图1加密",
+      "origin": "^https?://s.img.mix.sina.com.cn/\\S+/\\?img=(https?:)?//(\\w.sinaimg.cn/\\S+)(&size=.*)?",
       "exclude": "",
       "methods": [],
       "types": [
@@ -272,11 +292,11 @@
         "image"
       ],
       "target": "https://$3",
-      "example": "http://s.img.mix.sina.com.cn/api/auto/resize?size=150_100&img=//n.sinaimg.cn/news/transform/300/w192h108/20180719/mZoT-hfnsvza6547430.jpg",
+      "example": "https://s.img.mix.sina.com.cn/auto/crop?img=https://n.sinaimg.cn/tech/transform/200/w600h400/20180709/LOrN-hezpzwt7703977.jpg&size=328_218",
       "enable": true
     },
     {
-      "description": "原图显示：新浪新闻相关新闻封面缩略图2去后缀",
+      "description": "原图显示：新浪缩略图2去后缀",
       "origin": "^https?://(\\w).sinaimg.cn/(\\S+)&size=.*",
       "exclude": "",
       "methods": [],

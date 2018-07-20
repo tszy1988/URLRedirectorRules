@@ -10,3 +10,7 @@ Personal Rules for URLRedirector
 http://weibo.wbdacdn.com/url/t/RIo18YK/
 
 https://v.youku.com/v_show/id_XMjUxOTMxMjU2NA==.html?spm=a2h1n.8251846.0.0
+
+获取测试：
+
+https://photo.sina.com.cn/
