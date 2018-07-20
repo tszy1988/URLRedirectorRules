@@ -53,6 +53,16 @@
       "enable": true
     },
     {
+      "description": "常见网址乱码修复—— ?",
+      "origin": "^(https?)://(.*)%3F(.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "$1://$2?$3",
+      "example": "http://s.img.mix.sina.com.cn/auto/resize?img=http%3A//n.sinaimg.cn/ent/4_img/upload/dbf8751d/296/w1618h1078/20180715/ZuJX-hfhfwmv7334800.jpg&size=100_100",
+      "enable": true
+    },
+    {
       "description": "Google 翻译",
       "origin": "^https?://translate.google.com/",
       "exclude": "",
