@@ -1,0 +1,36 @@
+{
+  "version": "1.3.11.20180530",
+  "createdAt": "2017-03-02",
+  "rules": [
+    {
+      "description": "谷歌字体疑似解封，故禁用该规则",
+      "origin": "fonts.gstatic.com",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "fonts-gstatic.proxy.ustclug.org",
+      "example": "https://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf",
+      "enable": false
+    },
+    {
+      "description": "cdn.rawgit.com 不能直连",
+      "origin": "apis.google.com/js/(api|plusone).js$",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "cdn.rawgit.com/jiacai2050/gooreplacer/gh-pages/proxy/$1.js",
+      "example": "https://apis.google.com/js/api.js",
+      "enable": false
+    },
+    {
+      "description": "cdn.rawgit.com 不能直连",
+      "origin": "platform.twitter.com/widgets.js",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "cdn.rawgit.com/jiacai2050/gooreplacer/gh-pages/proxy/widgets.js",
+      "example": "https://platform.twitter.com/widgets.js",
+      "enable": false
+    }
+  ]
+}
