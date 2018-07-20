@@ -187,14 +187,14 @@
     },
     {
         "description": "阅读模式：新浪博客文章自动跳转到移动版",
-        "origin": "blog.sina.com.cn/(s/blog_\\w+.html).*",
+        "origin": "^https?://blog.sina.com.cn/(s/blog_\\w+.html).*",
         "exclude": "",
         "methods": [],
         "types": [
           "main_frame"
         ],
-        "target": "blog.sina.cn/dpool/blog/$1",
-        "example": "http://blog.sina.com.cn/s/blog_4e51dd500102xdzi.html",
+        "target": "https://blog.sina.cn/dpool/blog/$1",
+        "example": "http://blog.sina.com.cn/s/blog_450a32940102xow3.html",
         "enable": true
     },
     {
@@ -247,14 +247,14 @@
     },
     {
       "description": "自动全文：观察者网",
-      "origin": "^https?://www.guancha.cn/(\\S+/\\d{4}_\\d{2}_\\d{2}_\\d+)(_[1-9])?.shtml$",
+      "origin": "^https?://www.guancha.cn/(\\S+/\\d{4}_\\d{2}_\\d{2}_\\d+)(_[1-9])?.shtml.*",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
       "target": "https://www.guancha.cn/$1_s.shtml",
-      "example": "http://www.guancha.cn/chenjing/2017_03_16_399011_1.shtml",
+      "example": "https://www.guancha.cn/society/2018_07_18_464635.shtml?s=z",
       "enable": true
     },
     {
@@ -332,18 +332,6 @@
       ],
       "target": "https://68.media.tumblr.com/",
       "example": "http://41.media.tumblr.com/2e2b4f5c659dca9b09d9b8a881656d82/tumblr_o0y4zmaRxk1t52mpao1_500.jpg",
-      "enable": true
-    },
-    {
-      "description": "原图显示：TPRSS 生成的RSS图片直接显示原图（如果作用于 image，会导致 InoReader 破图，只能作用于地址栏。）",
-      "origin": "^https?://tprss.puteulanus.com/index.php\\?pic=https?://pbs.twimg.com/media/(\\S+).(jpg|jpeg|gif|png|bmp|webp)(&ssitoken_\\d+_)?",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://pbs.twimg.com/media/$1.$2:orig",
-      "example": "http://tprss.puteulanus.com/index.php?pic=http://pbs.twimg.com/media/C6T3cdEU4AEcnf-.jpg",
       "enable": true
     },
     {
