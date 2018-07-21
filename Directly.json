@@ -82,7 +82,7 @@
       "enable": true
     },
     {
-      "description": "去除跳转：百度",
+      "description": "去除跳转：垃圾站",
       "origin": "^http://www.spmke.com/source/bd.php\\?(https?://.+)",
       "exclude": "",
       "methods": [],
@@ -95,15 +95,15 @@
     },
     {
       "description": "去除跳转：知乎",
-      "origin": "^https://www.zhihu.com/question/(https?://\\S+)",
+      "origin": "^https://link.zhihu.com/\\?target=(\\S+)",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": [],
       "target": "$1",
-      "example": "https://www.zhihu.com/question/http://www.changlai.net",
-      "enable": true
+      "example": "https://link.zhihu.com/?target=https%3A//www.jd.com",
+      "enable": true,
+      "process": "urlDecode",
+      "_originRe": {}
     },
     {
       "description": "去除尾巴：今日头条",
@@ -272,7 +272,7 @@
         "image"
       ],
       "target": "https://$4",
-      "example": "https://s.img.mix.sina.com.cn/auto/resize?img=http%3A%2F%2Fsinastorage.com%2Fstorage.zone.photo.sina.com.cn%2Fzone%2F1000_0%2F20180721%2Fc58ea12d2f7dfe1e4737cbf681e27f82_2000_3000.jpg%3F%26ssig%3DBly11HvFBK%26KID%3Dsina%2Cslidenews%26Expires%3D1532150432&size=100_100",
+      "example": "https://s.img.mix.sina.com.cn/api/auto/resize?size=320_0&img=//n.sinaimg.cn/news/transform/299/w180h119/20180716/d6WY-hfkffak6676180.jpg",
       "enable": true,
       "process": "urlDecode",
       "_originRe": {}
