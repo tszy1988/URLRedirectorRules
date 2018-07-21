@@ -18,3 +18,4 @@ http://s.img.mix.sina.com.cn/auto/resize?size=328_218&img=http://sinastorage.com
 
 https://photo.sina.com.cn/
 
+https://aipai.sina.com.cn/index/view/

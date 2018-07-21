@@ -1,7 +1,67 @@
 {
-  "version": "1.3.11.20180530",
+  "version": "1.3.11.20180721",
   "createdAt": "2017-03-02",
   "rules": [
+    {
+      "description": "urlDecode —— &",
+      "origin": "^(https?)://(.*)%26(.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "$1://$2&$3",
+      "example": "http://s.img.mix.sina.com.cn/auto/resize?img=http://sinastorage.com/storage.zone.photo.sina.com.cn/zone/1000_0/20161231/e2d1452b1f49aaac10dbddfbd93e1d69_4134_2756.jpg%3F%26ssig%3DMVBKnzZzrb%26KID%3Dsina%2Cslidenews%26Expires%3D1532109658&size=100_100",
+      "enable": true
+    },
+    {
+      "description": "urlDecode —— ,",
+      "origin": "^(https?)://(.*)%2C(.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "$1://$2,$3",
+      "example": "http://s.img.mix.sina.com.cn/auto/resize?img=http://sinastorage.com/storage.zone.photo.sina.com.cn/zone/1000_0/20161231/e2d1452b1f49aaac10dbddfbd93e1d69_4134_2756.jpg%3F%26ssig%3DMVBKnzZzrb%26KID%3Dsina%2Cslidenews%26Expires%3D1532109658&size=100_100",
+      "enable": true
+    },
+    {
+      "description": "urlDecode —— /",
+      "origin": "^(https?)://(.*)%2F(.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "$1://$2/$3",
+      "example": "https://s.img.mix.sina.com.cn/auto/resize?img=http%3A%2F%2Fn.sinaimg.cn%2Fent%2F4_img%2Fupload%2Fdbf8751d%2F296%2Fw1618h1078%2F20180715%2FZuJX-hfhfwmv7334800.jpg&size=100_100",
+      "enable": true
+    },
+    {
+      "description": "urlDecode—— :",
+      "origin": "^(https?)://(.*)%3A(.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "$1://$2:$3",
+      "example": "http://s.img.mix.sina.com.cn/auto/resize?img=http%3A//n.sinaimg.cn/ent/4_img/upload/dbf8751d/296/w1618h1078/20180715/ZuJX-hfhfwmv7334800.jpg&size=100_100",
+      "enable": true
+    },
+    {
+      "description": "urlDecode—— =",
+      "origin": "^(https?)://(.*)%3D(.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "$1://$2=$3",
+      "example": "http://s.img.mix.sina.com.cn/auto/resize?img=http%3A//n.sinaimg.cn/ent/4_img/upload/dbf8751d/296/w1618h1078/20180715/ZuJX-hfhfwmv7334800.jpg&size=100_100",
+      "enable": true
+    },
+    {
+      "description": "urlDecode—— ?",
+      "origin": "^(https?)://(.*)%3F(.*)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "$1://$2?$3",
+      "example": "http://s.img.mix.sina.com.cn/auto/resize?img=http%3A//n.sinaimg.cn/ent/4_img/upload/dbf8751d/296/w1618h1078/20180715/ZuJX-hfhfwmv7334800.jpg&size=100_100",
+      "enable": true
+    },
     {
       "description": "谷歌字体疑似解封，故禁用该规则",
       "origin": "fonts.gstatic.com",
