@@ -264,7 +264,7 @@
     },
     {
       "description": "原图显示：新浪缩略图1解码",
-      "origin": "^https?://s.img.mix.sina.com.cn/(\\S+)img=(http\\S+)(&size=.*)?",
+      "origin": "^https?://s.img.mix.sina.com.cn/(\\S+)img=(\\S+)(&size=.*)?",
       "exclude": "",
       "methods": [],
       "types": [
