@@ -20,7 +20,6 @@
       "types": [],
       "target": "https://$1.proxy.ustclug.org",
       "example": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
-      "exampleURL": "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
       "enable": true
     },
     {
@@ -82,6 +81,20 @@
       "enable": true
     },
     {
+      "description": "去除跳转：Busy外链——注意安全",
+      "origin": "^https://busy.org/exit\\?url=(\\S+)",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "$1",
+      "example": "https://busy.org/exit?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FYNsOmb38UEP_vhjUARDn-w",
+      "enable": true,
+      "process": "urlDecode",
+      "_originRe": {}
+    },
+    {
       "description": "去除跳转：垃圾站",
       "origin": "^http://www.spmke.com/source/bd.php\\?(https?://.+)",
       "exclude": "",
@@ -94,7 +107,7 @@
       "enable": true
     },
     {
-      "description": "去除跳转：知乎",
+      "description": "去除跳转：知乎外链——注意安全",
       "origin": "^https://link.zhihu.com/\\?target=(\\S+)",
       "exclude": "",
       "methods": [],
