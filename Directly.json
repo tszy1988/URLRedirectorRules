@@ -47,7 +47,7 @@
       "exclude": "",
       "methods": [],
       "types": [],
-      "target": "https://$1.proxy.ustclug.org",
+      "target": "https://fonts.proxy.ustclug.org",
       "example": "https://fonts.googleapis.com/css?family=Tangerine",
       "enable": true
     },
