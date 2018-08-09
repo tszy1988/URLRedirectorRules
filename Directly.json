@@ -1,7 +1,36 @@
 {
-  "version": "1.3.12.20180808",
+  "version": "1.3.12.20180809",
   "createdAt": "2017-03-02",
   "rules": [
+    {
+      "description": "HTTPS-Everywhere #16108",
+      "origin": "https?://imglf(\\d).nosdn0.126.net/img/(.+)",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame",
+        "image"
+      ],
+      "target": "https://imglf$1.nosdn.127.net/img/$2",
+      "example": "",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "Github 加速",
+      "origin": "^https://raw.githubusercontent.com/(\\w+/\\w+)/(\\w+/\\w+)",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://github.jacksao.wang/$1/raw/$2",
+      "example": "https://raw.githubusercontent.com/ivysrono/UpgradeMixedContentBlacklist/master/Blacklist.json",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
     {
       "description": "Google 翻译",
       "origin": "^https?://translate.google.com/",
@@ -14,12 +43,12 @@
     },
     {
       "description": "Google -> 科大 1",
-      "origin": "^https?://(ajax|fonts).googleapis.com",
+      "origin": "^https?://fonts.googleapis.com",
       "exclude": "",
       "methods": [],
       "types": [],
       "target": "https://$1.proxy.ustclug.org",
-      "example": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+      "example": "https://fonts.googleapis.com/css?family=Tangerine",
       "enable": true
     },
     {
