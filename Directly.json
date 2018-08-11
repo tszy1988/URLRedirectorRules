@@ -117,8 +117,8 @@
       "types": [
         "main_frame"
       ],
-      "target": "https://www.zhihu.com/signup?next=%2F",
-      "example": "https://www.zhihu.com/#signup",
+      "target": "https://www.zhihu.com/signin",
+      "example": "https://www.zhihu.com/signup?next=%2F",
       "enable": true,
       "process": "",
       "_originRe": {}
