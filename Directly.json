@@ -43,11 +43,11 @@
     },
     {
       "description": "Google -> 科大 1",
-      "origin": "^https?://fonts.googleapis.com",
+      "origin": "^https?://(ajax|fonts).googleapis.com",
       "exclude": "",
       "methods": [],
       "types": [],
-      "target": "https://fonts.proxy.ustclug.org",
+      "target": "https://$1.proxy.ustclug.org",
       "example": "https://fonts.googleapis.com/css?family=Tangerine",
       "enable": true
     },
