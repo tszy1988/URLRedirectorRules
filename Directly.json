@@ -4,7 +4,7 @@
   "rules": [
     {
       "description": "HTTPS-Everywhere #16108",
-      "origin": "https?://imglf(\\d).nosdn0.126.net/img/(.+)",
+      "origin": "^https?://imglf(\\d).nosdn0.126.net/img/(.+)",
       "exclude": "",
       "methods": [],
       "types": [
@@ -97,7 +97,7 @@
     },
     {
       "description": "直接登录：用户样式库直接选择用户名密码登录模式",
-      "origin": "https://userstyles.org/login$",
+      "origin": "^https://userstyles.org/login$",
       "exclude": "",
       "methods": [],
       "types": [
@@ -111,13 +111,13 @@
     },
     {
       "description": "直接登录：知乎",
-      "origin": "^https?://www.zhihu.com/#signup$",
+      "origin": "^https?://www.zhihu.com/#signup.*",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
-      "target": "https://www.zhihu.com/#signin",
+      "target": "https://www.zhihu.com/signup?next=%2F",
       "example": "https://www.zhihu.com/#signup",
       "enable": true,
       "process": "",
@@ -153,7 +153,7 @@
     },
     {
       "description": "去除跳转：垃圾站",
-      "origin": "^http://www.spmke.com/source/bd.php\\?(https?://.+)",
+      "origin": "^https?://www.spmke.com/source/bd.php\\?(https?://.+)",
       "exclude": "",
       "methods": [],
       "types": [
@@ -167,7 +167,7 @@
     },
     {
       "description": "去除跳转：知乎外链——注意安全",
-      "origin": "^https://link.zhihu.com/\\?target=(\\S+)",
+      "origin": "^https?://link.zhihu.com/\\?target=(\\S+)",
       "exclude": "",
       "methods": [],
       "types": [],
@@ -179,7 +179,7 @@
     },
     {
       "description": "去除嵌套：QQ浏览器分享",
-      "origin": "https://news.html5.qq.com/share/\\d+\\?url=http(.+)",
+      "origin": "^https?://news.html5.qq.com/share/\\d+\\?url=http(.+)",
       "exclude": "",
       "methods": [],
       "types": [
@@ -193,7 +193,7 @@
     },
     {
       "description": "去除尾巴：天天快报",
-      "origin": "https://kuaibao.qq.com/s/(\\w+)&.*",
+      "origin": "^https?://kuaibao.qq.com/s/(\\w+)&.*",
       "exclude": "",
       "methods": [],
       "types": [
