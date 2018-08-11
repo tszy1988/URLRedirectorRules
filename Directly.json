@@ -111,7 +111,7 @@
     },
     {
       "description": "直接登录：知乎",
-      "origin": "^https?://www.zhihu.com/#signup.*",
+      "origin": "^https?://www.zhihu.com/#?signup.*",
       "exclude": "",
       "methods": [],
       "types": [
