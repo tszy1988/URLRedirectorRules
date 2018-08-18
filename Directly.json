@@ -3,21 +3,6 @@
   "createdAt": "2017-03-02",
   "rules": [
     {
-      "description": "HTTPS-Everywhere #16108",
-      "origin": "^https?://imglf(\\d).nosdn0.126.net/img/(.+)",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
-      "target": "https://imglf$1.nosdn.127.net/img/$2",
-      "example": "http://imglf3.nosdn0.126.net/img/WFU1VmZJa3UxeFltWTJ4ZDNOZDU4NXRmUFVLR1lXS1gySnpVQ2JObm95VjZjQjNGWVBjU2x3PT0.jpg",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
       "description": "Github 镜像加速 1",
       "origin": "^https://github.com/(\\w+/\\w+)/releases/download/(.+)",
       "exclude": "",
