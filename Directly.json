@@ -1,5 +1,5 @@
 {
-  "version": "1.3.12.20180811",
+  "version": "1.3.12.20180818",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -369,6 +369,21 @@
       ],
       "target": "https://$1",
       "example": "https://imglf.nosdn.127.net/img/T0VLUWtpQlNHSmVHYlM0QU01cElqRE0vM09ETzRKTEtjK3hROFpqSk9QMm1GWXlaL2EwQ1hBPT0.jpeg?imageView&thumbnail=500x10000&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=1&dx=0&gravity=southwest&dissolve=100&image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=&ssitoken_1479551598431_",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "原图显示：卡饭图床",
+      "origin": "^https?://a.ikafan.com/attachment/forum/(.+)",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame",
+        "image"
+      ],
+      "target": "https://fj.ikafan.com/attachment/forum/$1",
+      "example": "http://a.ikafan.com/attachment/forum/201312/21/132325xdicdd42rlfg39fb.png",
       "enable": true,
       "process": "",
       "_originRe": {}
