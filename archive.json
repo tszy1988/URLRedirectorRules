@@ -3,6 +3,34 @@
   "createdAt": "2017-03-02",
   "rules": [
     {
+      "description": "Github 镜像加速 1",
+      "origin": "^https://github.com/(\\w+/\\w+)/releases/download/(.+)",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://github.jacksao.wang/$1/releases/download/$2",
+      "example": "https://github.com/canton7/SyncTrayzor/releases/download/v1.1.21/SyncTrayzorPortable-x64.zip",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "Github 镜像加速 2",
+      "origin": "^https://raw.githubusercontent.com/(\\w+/\\w+)/(\\w+/\\w+)",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://github.jacksao.wang/$1/raw/$2",
+      "example": "https://raw.githubusercontent.com/ivysrono/UpgradeMixedContentBlacklist/master/Blacklist.json",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
       "description": "urlDecode —— &",
       "origin": "^(https?)://(.*)%26(.*)",
       "exclude": "",
