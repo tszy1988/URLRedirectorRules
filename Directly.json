@@ -1,5 +1,5 @@
 {
-  "version": "1.3.12.20180924",
+  "version": "1.3.12.20181017",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -353,6 +353,18 @@
       ],
       "target": "https://$1",
       "example": "https://imglf.nosdn.127.net/img/T0VLUWtpQlNHSmVHYlM0QU01cElqRE0vM09ETzRKTEtjK3hROFpqSk9QMm1GWXlaL2EwQ1hBPT0.jpeg?imageView&thumbnail=500x10000&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=1&dx=0&gravity=southwest&dissolve=100&image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=&ssitoken_1479551598431_",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "原图显示：3DM游戏网",
+      "origin": "^https?://(img.3dmgame.com/uploads/allimg/\\d+/\\d+_\\d+_\\d+)_lit.(jpg|png)",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "https://$1.$2",
+      "example": "https://img.3dmgame.com/uploads/allimg/171123/390_171123162159_20_lit.jpg",
       "enable": true,
       "process": "",
       "_originRe": {}
