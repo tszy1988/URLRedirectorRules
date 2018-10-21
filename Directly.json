@@ -1,9 +1,21 @@
 {
-  "version": "1.3.12.20181017",
+  "version": "1.3.12.20181021",
   "createdAt": "2017-03-02",
   "rules": [
     {
-      "description": "Downgrade 云来阁",
+      "description": "Downgrade B5200",
+      "origin": "^https://(www|m).b5200.net/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "http://$1.b5200.net/",
+      "example": "",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "HTTPS 云来阁",
       "origin": "^https?://www.yunlaige.com/",
       "exclude": "",
       "methods": [],
