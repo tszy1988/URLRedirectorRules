@@ -216,7 +216,7 @@
     },
     {
       "description": "去除尾巴：优酷",
-      "origin": "^https?://v(-wb)?.youku.com/v_show/id_(\\w+)(==_?.*)?.html\\?.*",
+      "origin": "^https?://v(-wb)?.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?.*)?",
       "exclude": "",
       "methods": [],
       "types": [
