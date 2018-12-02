@@ -216,14 +216,14 @@
     },
     {
       "description": "去除尾巴：优酷",
-      "origin": "^https?://v.youku.com/v_show/id_(\\w+)(==_?.*)?.html\\?.*",
+      "origin": "^https?://v(-wb)?.youku.com/v_show/id_(\\w+)(==_?.*)?.html\\?.*",
       "exclude": "",
       "methods": [],
       "types": [
         "main_frame"
       ],
-      "target": "https://v.youku.com/v_show/id_$1.html",
-      "example": "https://v.youku.com/v_show/id_XMTY0MjIyMDU3Mg==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
+      "target": "https://v.youku.com/v_show/id_$2.html",
+      "example": "https://v-wb.youku.com/v_show/id_XMzk0NTczMDY0NA==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
       "enable": true,
       "process": "",
       "_originRe": {}
