@@ -1,5 +1,5 @@
 {
-  "version": "1.3.12.20181202",
+  "version": "1.3.12.20190216",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -15,13 +15,25 @@
       "_originRe": {}
     },
     {
-      "description": "HTTPS 云来阁",
-      "origin": "^https?://www.yunlaige.com/",
+      "description": "HTTPS 反斗限免",
+      "origin": "^https?://(apprcn|freeapp).macapp8.com/",
       "exclude": "",
       "methods": [],
       "types": [],
-      "target": "https://m.yunlaige.com/",
-      "example": "",
+      "target": "https://www.apprcn.com/",
+      "example": "https://freeapp.macapp8.com/wp-includes/css/dist/block-library/style.min.css",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "HTTPS 凤舞文学网",
+      "origin": "^https?://www.qiuwu.net/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "https://www.okdd.net/",
+      "example": "https://www.qiuwu.net/",
       "enable": true,
       "process": "",
       "_originRe": {}
