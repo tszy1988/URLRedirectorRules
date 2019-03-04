@@ -133,6 +133,34 @@
       "enable": true,
       "process": "",
       "_originRe": {}
+    },
+    {
+        "description": "阅读模式：网易新闻APP分享产生地址重定向至更适合网页阅读版本 —— userScript 版本更易于维护",
+        "origin": "^https?://c.m.163.com/news/a/(\\w+).html(\\?.*)?",
+        "exclude": "",
+        "methods": [],
+        "types": [
+          "main_frame"
+        ],
+        "target": "https://3g.163.com/news/article/$1.html",
+        "example": "https://c.m.163.com/news/a/DR6RGEKC0001875P.html?clickfrom=index2018_news_newslist#offset=0",
+        "enable": true,
+        "process": "",
+        "_originRe": {}
+    },
+    {
+      "description": "去除尾巴：今日头条 —— userScript 版本更易于维护",
+      "origin": "^https?://(www|m).toutiao(cdn)?.com/(a|i)(\\d+)/\\?.*",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://$1.toutiao.com/$3$4",
+      "example": "https://www.toutiao.com/i6385720374801203714/?tt_from=mobile_qq&utm_campaign=client_share&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_ios",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
     }
   ]
 }
