@@ -9,13 +9,13 @@
       "methods": [],
       "types": [],
       "target": "http://$1.b5200.net/",
-      "example": "",
+      "example": "https://www.b5200.net/",
       "enable": true,
       "process": "",
       "_originRe": {}
     },
     {
-      "description": "HTTPS 反斗限免",
+      "description": "HTTPS 反斗限免 https://github.com/EFForg/https-everywhere/pull/17546",
       "origin": "^https?://(apprcn|freeapp).macapp8.com/",
       "exclude": "",
       "methods": [],
@@ -235,7 +235,7 @@
         "main_frame"
       ],
       "target": "https://v.youku.com/v_show/id_$2.html",
-      "example": "https://v-wb.youku.com/v_show/id_XMzk0NTczMDY0NA==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
+      "example": "https://v-wb.youku.com/v_show/id_XNjQ1OTkxMDcy==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
       "enable": true,
       "process": "",
       "_originRe": {}
@@ -249,24 +249,10 @@
           "main_frame"
         ],
         "target": "https://3g.163.com/news/article/$1.html",
-        "example": "",
+        "example": "https://c.m.163.com/news/a/DR6RGEKC0001875P.html?clickfrom=index2018_news_newslist#offset=0",
         "enable": true,
         "process": "",
         "_originRe": {}
-    },
-    {
-      "description": "阅读模式：Mozest 广场无图版转至完整版",
-      "origin": "^https?://g.mozest.com/archiver/tid-(\\d+).html$",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "http://g.mozest.com/viewthread.php?tid=$1",
-      "example": "http://g.mozest.com/archiver/tid-38916.html",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
     },
     {
         "description": "阅读模式：新浪博客文章自动跳转到移动版",
@@ -332,7 +318,7 @@
       "types": [
         "main_frame"
       ],
-      "target": "https://www.ftchinese.com/story/$1?full=y",
+      "target": "http://www.ftchinese.com/story/$1?full=y",
       "example": "http://www.ftchinese.com/story/001053184",
       "enable": true,
       "process": "",
@@ -455,7 +441,7 @@
     },
     {
       "description": "原图显示：Tumblr 失效的外链图床；测试见：https://www.reddit.com/domain/$1.media.tumblr.com/",
-      "origin": "^https?://(41|65|67|78).media.tumblr.com/",
+      "origin": "^https?://(41|65|67|68|78).media.tumblr.com/",
       "exclude": "",
       "methods": [],
       "types": [

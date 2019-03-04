@@ -119,6 +119,20 @@
       "target": "cdn.rawgit.com/jiacai2050/gooreplacer/gh-pages/proxy/widgets.js",
       "example": "https://platform.twitter.com/widgets.js",
       "enable": false
+    },
+    {
+      "description": "阅读模式：Mozest 广场无图版转至完整版 —— 疑似网站已挂",
+      "origin": "^https?://g.mozest.com/archiver/tid-(\\d+).html$",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "http://g.mozest.com/viewthread.php?tid=$1",
+      "example": "http://g.mozest.com/archiver/tid-38916.html",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
     }
   ]
 }
