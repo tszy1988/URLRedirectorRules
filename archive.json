@@ -149,6 +149,20 @@
         "_originRe": {}
     },
     {
+      "description": "去除尾巴：天天快报",
+      "origin": "^https?://kuaibao.qq.com/s/(\\w+)&.*",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://kuaibao.qq.com/s/$1",
+      "example": "https://kuaibao.qq.com/s/20180803A1NB7L00&*",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
       "description": "去除尾巴：今日头条 —— userScript 版本更易于维护",
       "origin": "^https?://(www|m).toutiao(cdn)?.com/(a|i)(\\d+)/\\?.*",
       "exclude": "",

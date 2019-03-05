@@ -1,5 +1,5 @@
 {
-  "version": "1.3.12.2019304",
+  "version": "1.3.12.2019305",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -182,20 +182,6 @@
       "example": "https://news.html5.qq.com/share/111111?url=http%3A%2F%2Fkuaibao.qq.com%2Fs%2F20180803A1NB7L00&*",
       "enable": true,
       "process": "urlDecode",
-      "_originRe": {}
-    },
-    {
-      "description": "去除尾巴：天天快报",
-      "origin": "^https?://kuaibao.qq.com/s/(\\w+)&.*",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://kuaibao.qq.com/s/$1",
-      "example": "https://kuaibao.qq.com/s/20180803A1NB7L00&*",
-      "enable": true,
-      "process": "",
       "_originRe": {}
     },
     {
