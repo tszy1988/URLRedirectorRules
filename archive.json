@@ -175,6 +175,20 @@
       "enable": true,
       "process": "",
       "_originRe": {}
+    },
+    {
+      "description": "自动全文：观察者网",
+      "origin": "^https?://www.guancha.cn/(\\S+/\\d{4}_\\d{2}_\\d{2}_\\d+)(_[1-9])?.shtml.*",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://www.guancha.cn/$1_s.shtml",
+      "example": "https://www.guancha.cn/society/2018_07_18_464635.shtml?s=z",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
     }
   ]
 }
