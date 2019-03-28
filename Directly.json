@@ -1,5 +1,5 @@
 {
-  "version": "1.3.12.2019305",
+  "version": "1.3.12.2019328",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -10,30 +10,6 @@
       "types": [],
       "target": "http://$1.b5200.net/",
       "example": "https://www.b5200.net/",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "HTTPS 反斗限免 https://github.com/EFForg/https-everywhere/pull/17546",
-      "origin": "^https?://(apprcn|freeapp).macapp8.com/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://www.apprcn.com/",
-      "example": "https://freeapp.macapp8.com/wp-includes/css/dist/block-library/style.min.css",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "HTTPS 凤舞文学网",
-      "origin": "^https?://www.qiuwu.net/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://www.okdd.net/",
-      "example": "https://www.qiuwu.net/",
       "enable": true,
       "process": "",
       "_originRe": {}
@@ -213,18 +189,18 @@
       "_originRe": {}
     },
     {
-        "description": "阅读模式：新浪博客文章自动跳转到移动版",
-        "origin": "^https?://blog.sina.com.cn/(s/blog_\\w+.html).*",
-        "exclude": "",
-        "methods": [],
-        "types": [
-          "main_frame"
-        ],
-        "target": "https://blog.sina.cn/dpool/blog/$1",
-        "example": "http://blog.sina.com.cn/s/blog_450a32940102xow3.html",
-        "enable": true,
-        "process": "",
-        "_originRe": {}
+      "description": "阅读模式：新浪博客文章自动跳转到移动版",
+      "origin": "^https?://blog.sina.com.cn/(s/blog_\\w+.html).*",
+      "exclude": "",
+      "methods": [],
+      "types": [
+        "main_frame"
+      ],
+      "target": "https://blog.sina.cn/dpool/blog/$1",
+      "example": "http://blog.sina.com.cn/s/blog_450a32940102xow3.html",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
     },
     {
       "description": "阅读模式：跳过微博看看框架",
