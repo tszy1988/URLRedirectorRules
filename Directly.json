@@ -1,5 +1,5 @@
 {
-  "version": "1.3.12.2019328",
+  "version": "1.3.12.20190502",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -55,9 +55,7 @@
       "origin": "^https?://www.douban.com/accounts/register$",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://www.douban.com/accounts/login",
       "example": "http://www.douban.com/accounts/register",
       "enable": true,
@@ -69,9 +67,7 @@
       "origin": "^https://userstyles.org/login$",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://userstyles.org/login?view=password",
       "example": "https://userstyles.org/login",
       "enable": true,
@@ -83,9 +79,7 @@
       "origin": "^https?://www.zhihu.com/#?signup.*",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://www.zhihu.com/signin",
       "example": "https://www.zhihu.com/signup?next=%2F",
       "enable": true,
@@ -97,9 +91,7 @@
       "origin": "^https://www.dropbox.com/s/(.*)\\?dl=0",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://dl.dropboxusercontent.com/s/$1",
       "example": "https://www.dropbox.com/s/rnx6mxpe5s44pa2/Redirector.txt?dl=0",
       "enable": true,
@@ -111,9 +103,7 @@
       "origin": "^https://busy.org/exit\\?url=(\\S+)",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "$1",
       "example": "https://busy.org/exit?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FYNsOmb38UEP_vhjUARDn-w",
       "enable": true,
@@ -125,9 +115,7 @@
       "origin": "^https?://www.spmke.com/source/bd.php\\?(https?://.+)",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "$1",
       "example": "http://www.spmke.com/source/bd.php?http://www.baidu.com",
       "enable": true,
@@ -151,9 +139,7 @@
       "origin": "^https?://news.html5.qq.com/share/\\d+\\?url=http(.+)",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "http$1",
       "example": "https://news.html5.qq.com/share/111111?url=http%3A%2F%2Fkuaibao.qq.com%2Fs%2F20180803A1NB7L00&*",
       "enable": true,
@@ -165,25 +151,9 @@
       "origin": "^https?://t.co/(\\w{10}).+",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://t.co/$1",
       "example": "http://t.co/shSgWRTz51张佳玮写字的地方",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "去除尾巴：优酷",
-      "origin": "^https?://v(-wb)?.youku.com/v_show/id_(\\w+)(==_?.*)?.html(\\?.*)?",
-      "exclude": "^https?://v.youku.com/v_show/id_\\w+.html$",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "https://v.youku.com/v_show/id_$2.html",
-      "example": "https://v-wb.youku.com/v_show/id_XNjQ1OTkxMDcy==.html?from=y1.2-1-105.3.5-2.1-1-1-4-0",
       "enable": true,
       "process": "",
       "_originRe": {}
@@ -193,9 +163,7 @@
       "origin": "^https?://blog.sina.com.cn/(s/blog_\\w+.html).*",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://blog.sina.cn/dpool/blog/$1",
       "example": "http://blog.sina.com.cn/s/blog_450a32940102xow3.html",
       "enable": true,
@@ -207,9 +175,7 @@
       "origin": "^https?://weibo.wbdacdn.com/url/t/(\\w{7})/?",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://t.cn/$1",
       "example": "http://weibo.wbdacdn.com/url/t/R5mLykn",
       "enable": true,
@@ -221,9 +187,7 @@
       "origin": "^https?://weibo.wbdacdn.com/user/\\d+/status(\\d+).html.*",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://m.weibo.cn/status/$1",
       "example": "http://weibo.wbdacdn.com/user/2803301701/status4074010167896825.html#utm_source=rss",
       "enable": true,
@@ -235,39 +199,9 @@
       "origin": "^https?://(www.)?weibo.com/ttarticle/p/show",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://media.weibo.cn/article",
       "example": "http://weibo.com/ttarticle/p/show?id=2309404056722711967901",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "自动全文：FT中文网",
-      "origin": "^https?://www.ftchinese.com/story/(\\d+)$",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "http://www.ftchinese.com/story/$1?full=y",
-      "example": "http://www.ftchinese.com/story/001053184",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "自动全文：法律图书馆",
-      "origin": "^https?://www.law-lib.com/law/law_view.asp\\?id=(\\d+)$",
-      "exclude": "",
-      "methods": [],
-      "types": [
-        "main_frame"
-      ],
-      "target": "http://www.law-lib.com/law/law_view1.asp?id=$1",
-      "example": "http://www.law-lib.com/law/law_view.asp?id=499805",
       "enable": true,
       "process": "",
       "_originRe": {}
@@ -277,12 +211,21 @@
       "origin": "^https?://(imglf(\\d)?.nosdn.127.net/img/\\w+.(jpg|jpeg|gif|png|bmp|webp))\\?.*",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
+      "types": ["main_frame", "image"],
       "target": "https://$1",
       "example": "https://imglf.nosdn.127.net/img/T0VLUWtpQlNHSmVHYlM0QU01cElqRE0vM09ETzRKTEtjK3hROFpqSk9QMm1GWXlaL2EwQ1hBPT0.jpeg?imageView&thumbnail=500x10000&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=1&dx=0&gravity=southwest&dissolve=100&image=aW1nL3N5cy9zZWxlY3Rpb24tcnNzLXdhdGVybWFyay5wbmc=&ssitoken_1479551598431_",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "原图显示：京东商品预览大图无水印",
+      "origin": "^https://img(\\d+).360buyimg.com/*n0/jfs/",
+      "exclude": "",
+      "methods": [],
+      "types": ["main_frame", "image"],
+      "target": "https://img$1.360buyimg.com/n12/jfs/",
+      "example": "https://img10.360buyimg.com///n0/jfs/t1/35423/4/7367/111107/5cc7b29bE1044bd1c/618c29685719f124.png",
       "enable": true,
       "process": "",
       "_originRe": {}
@@ -304,10 +247,7 @@
       "origin": "^https?://a.ikafan.com/attachment/forum/(.+)",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
+      "types": ["main_frame", "image"],
       "target": "https://fj.ikafan.com/attachment/forum/$1",
       "example": "http://a.ikafan.com/attachment/forum/201312/21/132325xdicdd42rlfg39fb.png",
       "enable": true,
@@ -319,10 +259,7 @@
       "origin": "^https?://s.img.mix.sina.com.cn/\\S+img=(https?)?(:|%3A)?(//|%2F%2F)?(\\S+)(&size=.*)?",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
+      "types": ["main_frame", "image"],
       "target": "https://$4",
       "example": "https://s.img.mix.sina.com.cn/api/auto/resize?size=320_0&img=//n.sinaimg.cn/news/transform/299/w180h119/20180716/d6WY-hfkffak6676180.jpg",
       "enable": true,
@@ -334,10 +271,7 @@
       "origin": "^https?://(\\w).sinaimg.cn/(\\S+)&size=.*",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
+      "types": ["main_frame", "image"],
       "target": "https://$1.sinaimg.cn/$2",
       "example": "http://n.sinaimg.cn/sinacn12/156/w640h316/20180717/750b-hfkffam1788263.jpg&size=130_870718/besy-hfnsvza0055818.jpg&size=130_87",
       "enable": true,
@@ -349,10 +283,7 @@
       "origin": "^https?://(\\d+).media.tumblr.com/(.+tumblr_\\w+_)500.(jpg|jpeg|gif|png|bmp|webp)(\\?ssitoken_\\d+_)?$",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
+      "types": ["main_frame", "image"],
       "target": "https://$1.media.tumblr.com/$21280.$3",
       "example": "https://68.media.tumblr.com/3beca4f8c1e028a29e87394de17c86b1/tumblr_o2qh8ztGAt1r7hrego2_500.jpg",
       "enable": true,
@@ -364,10 +295,7 @@
       "origin": "^https?://(41|65|67|68|78).media.tumblr.com/",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
+      "types": ["main_frame", "image"],
       "target": "https://66.media.tumblr.com/",
       "example": "http://41.media.tumblr.com/2e2b4f5c659dca9b09d9b8a881656d82/tumblr_o0y4zmaRxk1t52mpao1_500.jpg",
       "enable": true,
@@ -379,10 +307,7 @@
       "origin": "^https://wk588.com/wp-content/uploads/(\\d{4}/\\d{2}/\\S+.(jpg|jpeg|gif|png|bmp|webp))$",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame",
-        "image"
-      ],
+      "types": ["main_frame", "image"],
       "target": "https://img.wk588.com/wp-content/uploads/$1",
       "example": "https://wk588.com/wp-content/uploads/2018/01/134011hyjgwm9qmukzumy2.png",
       "enable": true,
