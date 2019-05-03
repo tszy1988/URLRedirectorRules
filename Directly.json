@@ -15,6 +15,18 @@
       "_originRe": {}
     },
     {
+      "description": "Invalid HTTPS：Downgrade shumilou",
+      "origin": "^https://(www|m).shumil.com?/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "http://$1.shumil.co/",
+      "example": "https://www.shumil.com/",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
       "description": "Invalid HTTPS：51tuanzu",
       "origin": "^https://cssjs.51tuanzu.com/",
       "exclude": "",
