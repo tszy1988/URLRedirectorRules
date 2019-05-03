@@ -15,6 +15,18 @@
       "_originRe": {}
     },
     {
+      "description": "Invalid HTTPS：Downgrade 盗梦人",
+      "origin": "^https://(www|m).daomengren.com/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "http://$1.daomengren.com/",
+      "example": "https://www.daomengren.com/",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
       "description": "Invalid HTTPS：Downgrade shumilou",
       "origin": "^https://(www|m).shumil.com?/",
       "exclude": "",
