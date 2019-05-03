@@ -1,15 +1,27 @@
 {
-  "version": "1.3.12.20190502",
+  "version": "1.3.12.20190503",
   "createdAt": "2017-03-02",
   "rules": [
     {
-      "description": "Downgrade B5200",
+      "description": "Invalid HTTPS：Downgrade B5200",
       "origin": "^https://(www|m).b5200.net/",
       "exclude": "",
       "methods": [],
       "types": [],
       "target": "http://$1.b5200.net/",
       "example": "https://www.b5200.net/",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "Invalid HTTPS：51tuanzu",
+      "origin": "^https://cssjs.51tuanzu.com/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "https://cssjs.okdd.net/",
+      "example": "https://cssjs.51tuanzu.com/m/favicon.ico",
       "enable": true,
       "process": "",
       "_originRe": {}
