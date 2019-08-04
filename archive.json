@@ -7,9 +7,7 @@
       "origin": "^https://github.com/(\\w+/\\w+)/releases/download/(.+)",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://github.jacksao.wang/$1/releases/download/$2",
       "example": "https://github.com/canton7/SyncTrayzor/releases/download/v1.1.21/SyncTrayzorPortable-x64.zip",
       "enable": true,
@@ -21,9 +19,7 @@
       "origin": "^https://raw.githubusercontent.com/(\\w+/\\w+)/(\\w+/\\w+)",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://github.jacksao.wang/$1/raw/$2",
       "example": "https://raw.githubusercontent.com/ivysrono/UpgradeMixedContentBlacklist/master/Blacklist.json",
       "enable": true,
@@ -125,9 +121,7 @@
       "origin": "^https?://g.mozest.com/archiver/tid-(\\d+).html$",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "http://g.mozest.com/viewthread.php?tid=$1",
       "example": "http://g.mozest.com/archiver/tid-38916.html",
       "enable": true,
@@ -135,27 +129,23 @@
       "_originRe": {}
     },
     {
-        "description": "阅读模式：网易新闻APP分享产生地址重定向至更适合网页阅读版本 —— userScript 版本更易于维护",
-        "origin": "^https?://c.m.163.com/news/a/(\\w+).html(\\?.*)?",
-        "exclude": "",
-        "methods": [],
-        "types": [
-          "main_frame"
-        ],
-        "target": "https://3g.163.com/news/article/$1.html",
-        "example": "https://c.m.163.com/news/a/DR6RGEKC0001875P.html?clickfrom=index2018_news_newslist#offset=0",
-        "enable": true,
-        "process": "",
-        "_originRe": {}
+      "description": "阅读模式：网易新闻APP分享产生地址重定向至更适合网页阅读版本 —— 已集成于扩展 ReplaceURLs",
+      "origin": "^https?://c.m.163.com/news/a/(\\w+).html(\\?.*)?",
+      "exclude": "",
+      "methods": [],
+      "types": ["main_frame"],
+      "target": "https://3g.163.com/news/article/$1.html",
+      "example": "https://c.m.163.com/news/a/DR6RGEKC0001875P.html?clickfrom=index2018_news_newslist#offset=0",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
     },
     {
       "description": "去除尾巴：天天快报",
       "origin": "^https?://kuaibao.qq.com/s/(\\w+)&.*",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://kuaibao.qq.com/s/$1",
       "example": "https://kuaibao.qq.com/s/20180803A1NB7L00&*",
       "enable": true,
@@ -163,13 +153,11 @@
       "_originRe": {}
     },
     {
-      "description": "去除尾巴：今日头条 —— userScript 版本更易于维护",
+      "description": "去除尾巴：今日头条 —— 已集成于扩展 ReplaceURLs",
       "origin": "^https?://(www|m).toutiao(cdn)?.com/(a|i)(\\d+)/\\?.*",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://$1.toutiao.com/$3$4",
       "example": "https://www.toutiao.com/i6385720374801203714/?tt_from=mobile_qq&utm_campaign=client_share&app=news_article&utm_source=mobile_qq&utm_medium=toutiao_ios",
       "enable": true,
@@ -181,9 +169,7 @@
       "origin": "^https?://www.guancha.cn/(\\S+/\\d{4}_\\d{2}_\\d{2}_\\d+)(_[1-9])?.shtml.*",
       "exclude": "",
       "methods": [],
-      "types": [
-        "main_frame"
-      ],
+      "types": ["main_frame"],
       "target": "https://www.guancha.cn/$1_s.shtml",
       "example": "https://www.guancha.cn/society/2018_07_18_464635.shtml?s=z",
       "enable": true,

@@ -39,54 +39,6 @@
       "_originRe": {}
     },
     {
-      "description": "Invalid HTTPS：51tuanzu",
-      "origin": "^https://cssjs.51tuanzu.com/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://cssjs.okdd.net/",
-      "example": "https://cssjs.51tuanzu.com/m/favicon.ico",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "Google 翻译",
-      "origin": "^https?://translate.google.com/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://translate.google.cn/",
-      "example": "",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "Google -> 科大 1",
-      "origin": "^https?://(ajax|fonts).googleapis.com",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://$1.proxy.ustclug.org",
-      "example": "https://fonts.googleapis.com/css?family=Tangerine",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "Google -> 科大 2",
-      "origin": "^https?://themes.googleusercontent.com",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "https://google-themes.proxy.ustclug.org",
-      "example": "https://themes.googleusercontent.com/static/fonts/antic/v4/hEa8XCNM7tXGzD0Uk0AipA.ttf",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
       "description": "直接登录：豆瓣跳过注册页面",
       "origin": "^https?://www.douban.com/accounts/register$",
       "exclude": "",
