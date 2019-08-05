@@ -1,43 +1,7 @@
 {
-  "version": "1.3.12.20190503",
+  "version": "1.3.17.20190805",
   "createdAt": "2017-03-02",
   "rules": [
-    {
-      "description": "Invalid HTTPS：Downgrade B5200",
-      "origin": "^https://(www|m).b5200.net/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "http://$1.b5200.net/",
-      "example": "https://www.b5200.net/",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "Invalid HTTPS：Downgrade 盗梦人",
-      "origin": "^https://(www|m).daomengren.com/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "http://$1.daomengren.com/",
-      "example": "https://www.daomengren.com/",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "Invalid HTTPS：Downgrade shumilou",
-      "origin": "^https://(www|m).shumil.com?/",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "http://$1.shumil.co/",
-      "example": "https://www.shumil.com/",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
     {
       "description": "直接登录：豆瓣跳过注册页面",
       "origin": "^https?://www.douban.com/accounts/register$",

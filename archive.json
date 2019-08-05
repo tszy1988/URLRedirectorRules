@@ -1,31 +1,7 @@
 {
-  "version": "1.3.11.20180721",
+  "version": "1.3.17.20190805",
   "createdAt": "2017-03-02",
   "rules": [
-    {
-      "description": "Github 镜像加速 1",
-      "origin": "^https://github.com/(\\w+/\\w+)/releases/download/(.+)",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://github.jacksao.wang/$1/releases/download/$2",
-      "example": "https://github.com/canton7/SyncTrayzor/releases/download/v1.1.21/SyncTrayzorPortable-x64.zip",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "Github 镜像加速 2",
-      "origin": "^https://raw.githubusercontent.com/(\\w+/\\w+)/(\\w+/\\w+)",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://github.jacksao.wang/$1/raw/$2",
-      "example": "https://raw.githubusercontent.com/ivysrono/UpgradeMixedContentBlacklist/master/Blacklist.json",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
     {
       "description": "urlDecode —— &",
       "origin": "^(https?)://(.*)%26(.*)",
@@ -87,16 +63,6 @@
       "enable": true
     },
     {
-      "description": "谷歌字体疑似解封，故禁用该规则",
-      "origin": "fonts.gstatic.com",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "fonts-gstatic.proxy.ustclug.org",
-      "example": "https://fonts.gstatic.com/ea/cwtexhei/v3/cwTeXHei-zhonly.ttf",
-      "enable": false
-    },
-    {
       "description": "cdn.rawgit.com 不能直连",
       "origin": "apis.google.com/js/(api|plusone).js$",
       "exclude": "",
@@ -115,18 +81,6 @@
       "target": "cdn.rawgit.com/jiacai2050/gooreplacer/gh-pages/proxy/widgets.js",
       "example": "https://platform.twitter.com/widgets.js",
       "enable": false
-    },
-    {
-      "description": "阅读模式：Mozest 广场无图版转至完整版 —— 疑似网站已挂",
-      "origin": "^https?://g.mozest.com/archiver/tid-(\\d+).html$",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "http://g.mozest.com/viewthread.php?tid=$1",
-      "example": "http://g.mozest.com/archiver/tid-38916.html",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
     },
     {
       "description": "阅读模式：网易新闻APP分享产生地址重定向至更适合网页阅读版本 —— 已集成于扩展 ReplaceURLs",
@@ -165,13 +119,49 @@
       "_originRe": {}
     },
     {
-      "description": "自动全文：观察者网",
+      "description": "自动全文：观察者网 —— 已集成于扩展 ReplaceURLs",
       "origin": "^https?://www.guancha.cn/(\\S+/\\d{4}_\\d{2}_\\d{2}_\\d+)(_[1-9])?.shtml.*",
       "exclude": "",
       "methods": [],
       "types": ["main_frame"],
       "target": "https://www.guancha.cn/$1_s.shtml",
       "example": "https://www.guancha.cn/society/2018_07_18_464635.shtml?s=z",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "Invalid HTTPS：Downgrade B5200 —— 已集成于扩展 ReplaceURLs",
+      "origin": "^https://(www|m).b5200.net/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "http://$1.b5200.net/",
+      "example": "https://www.b5200.net/",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "Invalid HTTPS：Downgrade 盗梦人 —— 已集成于扩展 ReplaceURLs",
+      "origin": "^https://(www|m).daomengren.com/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "http://$1.daomengren.com/",
+      "example": "https://www.daomengren.com/",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
+      "description": "Invalid HTTPS：Downgrade shumilou —— 已集成于扩展 ReplaceURLs",
+      "origin": "^https://(www|m).shumil.com?/",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "http://$1.shumil.co/",
+      "example": "https://www.shumil.com/",
       "enable": true,
       "process": "",
       "_originRe": {}
