@@ -1,91 +1,7 @@
 {
-  "version": "1.3.17.20190805",
+  "version": "1.3.17.20190806",
   "createdAt": "2017-03-02",
   "rules": [
-    {
-      "description": "直接登录：豆瓣跳过注册页面",
-      "origin": "^https?://www.douban.com/accounts/register$",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://www.douban.com/accounts/login",
-      "example": "http://www.douban.com/accounts/register",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "直接登录：用户样式库直接选择用户名密码登录模式",
-      "origin": "^https://userstyles.org/login$",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://userstyles.org/login?view=password",
-      "example": "https://userstyles.org/login",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "直接登录：知乎",
-      "origin": "^https?://www.zhihu.com/#?signup.*",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://www.zhihu.com/signin",
-      "example": "https://www.zhihu.com/signup?next=%2F",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "直接下载：Dropbpx 跳过下载页直接进入直链",
-      "origin": "^https://www.dropbox.com/s/(.*)\\?dl=0",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://dl.dropboxusercontent.com/s/$1",
-      "example": "https://www.dropbox.com/s/rnx6mxpe5s44pa2/Redirector.txt?dl=0",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "去除跳转：Busy外链——注意安全",
-      "origin": "^https://busy.org/exit\\?url=(\\S+)",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "$1",
-      "example": "https://busy.org/exit?url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FYNsOmb38UEP_vhjUARDn-w",
-      "enable": true,
-      "process": "urlDecode",
-      "_originRe": {}
-    },
-    {
-      "description": "去除跳转：垃圾站",
-      "origin": "^https?://www.spmke.com/source/bd.php\\?(https?://.+)",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "$1",
-      "example": "http://www.spmke.com/source/bd.php?http://www.baidu.com",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "去除跳转：知乎外链——注意安全",
-      "origin": "^https?://link.zhihu.com/\\?target=(\\S+)",
-      "exclude": "",
-      "methods": [],
-      "types": [],
-      "target": "$1",
-      "example": "https://link.zhihu.com/?target=https%3A//www.jd.com",
-      "enable": true,
-      "process": "urlDecode",
-      "_originRe": {}
-    },
     {
       "description": "去除嵌套：QQ浏览器分享",
       "origin": "^https?://news.html5.qq.com/share/\\d+\\?url=http(.+)",
@@ -93,57 +9,9 @@
       "methods": [],
       "types": ["main_frame"],
       "target": "http$1",
-      "example": "https://news.html5.qq.com/share/111111?url=http%3A%2F%2Fkuaibao.qq.com%2Fs%2F20180803A1NB7L00&*",
+      "example": "https://news.html5.qq.com/share/3068209130307915451?url=http%3A%2F%2Fkuaibao.qq.com%2Fs%2F20180527A0N24800*",
       "enable": true,
       "process": "urlDecode",
-      "_originRe": {}
-    },
-    {
-      "description": "去除尾巴：Twitter 短链判断失败时混入的尾部中文等字符",
-      "origin": "^https?://t.co/(\\w{10}).+",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://t.co/$1",
-      "example": "http://t.co/shSgWRTz51张佳玮写字的地方",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "阅读模式：新浪博客文章自动跳转到移动版",
-      "origin": "^https?://blog.sina.com.cn/(s/blog_\\w+.html).*",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://blog.sina.cn/dpool/blog/$1",
-      "example": "http://blog.sina.com.cn/s/blog_450a32940102xow3.html",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "阅读模式：跳过微博看看框架",
-      "origin": "^https?://weibo.wbdacdn.com/url/t/(\\w{7})/?",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://t.cn/$1",
-      "example": "http://weibo.wbdacdn.com/url/t/R5mLykn",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "阅读模式：将特定微博信息从微博看看跳转至微博HTML5版",
-      "origin": "^https?://weibo.wbdacdn.com/user/\\d+/status(\\d+).html.*",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://m.weibo.cn/status/$1",
-      "example": "http://weibo.wbdacdn.com/user/2803301701/status4074010167896825.html#utm_source=rss",
-      "enable": true,
-      "process": "",
       "_originRe": {}
     },
     {
@@ -243,7 +111,7 @@
       "_originRe": {}
     },
     {
-      "description": "原图显示：Tumblr 失效的外链图床；测试见：https://www.reddit.com/domain/$1.media.tumblr.com/",
+      "description": "原图显示：Tumblr 失效的外链图床；测试见：https://www.reddit.com/domain/66.media.tumblr.com/",
       "origin": "^https?://(41|65|67|68|78).media.tumblr.com/",
       "exclude": "",
       "methods": [],
