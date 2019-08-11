@@ -15,18 +15,6 @@
       "_originRe": {}
     },
     {
-      "description": "阅读模式：微博文章自动跳转到移动版",
-      "origin": "^https?://(www.)?weibo.com/ttarticle/p/show",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame"],
-      "target": "https://media.weibo.cn/article",
-      "example": "http://weibo.com/ttarticle/p/show?id=2309404056722711967901",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
       "description": "原图显示：Lofter；可作用于InoReader",
       "origin": "^https?://(imglf(\\d)?.nosdn.127.net/img/\\w+.(jpg|jpeg|gif|png|bmp|webp))\\?.*",
       "exclude": "",
