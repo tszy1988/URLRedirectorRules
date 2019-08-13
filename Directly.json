@@ -1,5 +1,5 @@
 {
-  "version": "1.3.17.20190806",
+  "version": "1.3.17.20190813",
   "createdAt": "2017-03-02",
   "rules": [
     {
@@ -15,7 +15,7 @@
       "_originRe": {}
     },
     {
-      "description": "原图显示：Lofter；可作用于InoReader",
+      "description": "原图显示：Lofter —— 已集成于 Replace CDNs 扩展",
       "origin": "^https?://(imglf(\\d)?.nosdn.127.net/img/\\w+.(jpg|jpeg|gif|png|bmp|webp))\\?.*",
       "exclude": "",
       "methods": [],
@@ -27,7 +27,7 @@
       "_originRe": {}
     },
     {
-      "description": "原图显示：京东商品预览大图无水印",
+      "description": "原图显示：京东商品预览大图无水印 —— 已集成于 Replace CDNs 扩展",
       "origin": "^https://img(\\d+).360buyimg.com/*n0/jfs/",
       "exclude": "",
       "methods": [],
@@ -39,7 +39,7 @@
       "_originRe": {}
     },
     {
-      "description": "原图显示：3DM游戏网",
+      "description": "原图显示：3DM游戏网 —— 已集成于 Replace CDNs 扩展",
       "origin": "^https?://(img.3dmgame.com/uploads/allimg/\\d+/\\d+_\\d+_\\d+)_lit.(jpg|png)",
       "exclude": "",
       "methods": [],
@@ -51,19 +51,7 @@
       "_originRe": {}
     },
     {
-      "description": "原图显示：卡饭图床",
-      "origin": "^https?://a.ikafan.com/attachment/forum/(.+)",
-      "exclude": "",
-      "methods": [],
-      "types": ["main_frame", "image"],
-      "target": "https://fj.ikafan.com/attachment/forum/$1",
-      "example": "http://a.ikafan.com/attachment/forum/201312/21/132325xdicdd42rlfg39fb.png",
-      "enable": true,
-      "process": "",
-      "_originRe": {}
-    },
-    {
-      "description": "原图显示：新浪缩略图1解码",
+      "description": "原图显示：新浪缩略图1解码 —— 已集成于 Replace CDNs 扩展",
       "origin": "^https?://s.img.mix.sina.com.cn/\\S+img=(https?)?(:|%3A)?(//|%2F%2F)?(\\S+)(&size=.*)?",
       "exclude": "",
       "methods": [],
@@ -75,7 +63,7 @@
       "_originRe": {}
     },
     {
-      "description": "原图显示：新浪缩略图2去后缀",
+      "description": "原图显示：新浪缩略图2去后缀 —— 已集成于 Replace CDNs 扩展",
       "origin": "^https?://(\\w).sinaimg.cn/(\\S+)&size=.*",
       "exclude": "",
       "methods": [],
@@ -87,7 +75,7 @@
       "_originRe": {}
     },
     {
-      "description": "原图显示：Tumblr；可作用于InoReader",
+      "description": "原图显示：Tumblr —— 已集成于 Replace CDNs 扩展",
       "origin": "^https?://(\\d+).media.tumblr.com/(.+tumblr_\\w+_)500.(jpg|jpeg|gif|png|bmp|webp)(\\?ssitoken_\\d+_)?$",
       "exclude": "",
       "methods": [],
@@ -99,7 +87,7 @@
       "_originRe": {}
     },
     {
-      "description": "原图显示：Tumblr 失效的外链图床；测试见：https://www.reddit.com/domain/66.media.tumblr.com/",
+      "description": "原图显示：Tumblr 失效的外链图床；测试见：https://www.reddit.com/domain/66.media.tumblr.com/ —— 已集成于 Replace CDNs 扩展",
       "origin": "^https?://(41|65|67|68|78).media.tumblr.com/",
       "exclude": "",
       "methods": [],
@@ -111,7 +99,7 @@
       "_originRe": {}
     },
     {
-      "description": "原图显示：修复挖矿网 RSS 输出错误",
+      "description": "原图显示：修复挖矿网 RSS 输出错误 —— 已集成于 Replace CDNs 扩展",
       "origin": "^https://wk588.com/wp-content/uploads/(\\d{4}/\\d{2}/\\S+.(jpg|jpeg|gif|png|bmp|webp))$",
       "exclude": "",
       "methods": [],
