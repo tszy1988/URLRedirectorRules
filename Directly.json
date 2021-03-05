@@ -43,7 +43,7 @@
       "exclude": "",
       "methods": [],
       "types": [],
-      "target": "http://www.lrz1.fun:32400/",
+      "target": "http://www.lrz1.fun:32400",
       "example": "",
       "enable": true,
       "process": "",
