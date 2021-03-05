@@ -15,7 +15,7 @@
     },
     {
       "description": "openwrt",
-      "origin": "http://op.lrz1.fun",
+      "origin": "http://op.com",
       "exclude": "",
       "methods": [],
       "types": [],
@@ -27,7 +27,7 @@
     },
     {
       "description": "emby",
-      "origin": "http://emby.lrz1.fun",
+      "origin": "http://emby.com",
       "exclude": "",
       "methods": [],
       "types": [],
@@ -39,7 +39,7 @@
     },
     {
       "description": "plex",
-      "origin": "http://plex.lrz1.fun",
+      "origin": "http://plex.com",
       "exclude": "",
       "methods": [],
       "types": [],
@@ -51,7 +51,7 @@
     },
     {
       "description": "QNAP",
-      "origin": "http://nas.lrz1.fun",
+      "origin": "http://nas.com",
       "exclude": "",
       "methods": [],
       "types": [],
