@@ -50,6 +50,18 @@
       "_originRe": {}
     },
     {
+      "description": "项目部",
+      "origin": "http://xmb.com",
+      "exclude": "",
+      "methods": [],
+      "types": [],
+      "target": "http://xmb.lrz1.fun:8081",
+      "example": "",
+      "enable": true,
+      "process": "",
+      "_originRe": {}
+    },
+    {
       "description": "QNAP",
       "origin": "http://nas.com",
       "exclude": "",
